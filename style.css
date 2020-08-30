@@ -1,0 +1,71 @@
+body {
+    color:white;
+    background-color:black;
+    font-size:12px;
+}
+
+#canvas_container {
+    position: relative;
+    text-align:center;
+}
+
+.anim, #last_anim {
+    border: thin solid green;
+    z-index:100;
+    margin: 3px auto;
+}
+
+.anim:hover, #last_anim:hover {
+    border: thin solid LimeGreen;
+}
+
+.links {
+    z-index:500;
+}
+
+.link {
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    left: 50%;
+    top: -50px; // wtf css
+    z-index:500;
+}
+
+.links td {
+    font-family: Arial,sans-serif;
+    font-size: 2.0em; 
+    width: 150px;
+    text-align: center;
+    color: #000;
+}
+
+.links a {
+    color:white;
+    text-decoration: none; 
+}
+
+.center {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.subtitle {
+    font-size: 0.7em;
+    //color: #000;
+}
+
+.col-sm-4 img {
+    width: 60%;
+    margin-bottom: 0.2rem;
+}
+
+img:hover {
+    opacity: 0.5;
+}

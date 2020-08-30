@@ -1,0 +1,25 @@
+Administrating Ensimag's Communication Pole's servers : activity summary
+
+Servers state on the beginning :
+- A machine under Debian not kept up-to-date since 6 years (only security updates where made). Repositories weren't even reachable anymore -> updates impossible.
+- No automatic backup system configured.
+- Most recent backups where 4-year-old.
+
+Work performed :
+- Obtaining a new server (donation from Ensimag's Junior Entreprise).
+- Complete installation and configuration of this new server.
+- Communication with Ensimag's computer support team and administration for moving servers to Ensimag's servers room.
+- Moving servers to Ensimag's servers room.
+- Putting new server into service.
+- Communication with the different websites' webmasters concerning the migration, and other.
+- Communication with Ensimag's computer support team for the migration of the domain names to the new server.
+- Function test of datas' migration and of changing server concerned by the domain names.
+- Configuration of an automatic backup and exportation to old server system, the latter being now used as a backup server.
+- Rewriting of servers' documentation.
+- Setting a minimal quality of service in order to be able to access the server in case of problems (network congestion, high CPU usage).
+The whole migration has been done in a way that allowed hosted websites always to be reachable. They have never be unreachable more than 24 hours.
+
+Gained experience :
+- Better knowledge in server administration (apache2, mysql, backups handling, misc. configurations).
+- Experience in communication with webmasters and technical administration.
+- Satisfaction of putting into operation a safer system!

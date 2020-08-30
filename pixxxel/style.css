@@ -1,0 +1,27 @@
+body {
+    background-color:black;
+    color:white;
+}
+
+h1 {
+    color:red;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.col-lg-3 div {
+    margin-bottom:20px;
+}
+
+.back {
+    margin:3px;
+}
+
+@media only screen and (max-width: 768px) {
+    .col-lg-6 {
+        order: 1;
+    }
+    .col-lg-3 {
+        order: 2;
+    }
+}

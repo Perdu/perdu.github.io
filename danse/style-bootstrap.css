@@ -1,0 +1,22 @@
+body {
+  background-image: url('img/1474233297.webp');
+  background-color: black;
+  color: #9f9f9f;
+}
+
+.col-sm-4 img, .col-sm-3 img {
+    width: 60%;
+    margin-bottom: 0.2rem;
+}
+
+.col-sm-4 img:hover, .col-sm-3 img:hover {
+    opacity: 0.5;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+.back {
+    margin:3px;
+}
