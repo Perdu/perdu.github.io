@@ -1,7 +1,7 @@
 body {
-    background-color:black;
+    background-color: #F6F7FF;
 //    font-size:12px;
-    color: #cfcfcf;
+    color: black;
 }
 
 h2 {
@@ -11,12 +11,6 @@ h2 {
 #canvas_container {
     position: relative;
     text-align:center;
-}
-
-.anim, #last_anim {
-    border: thin solid green;
-    z-index:100;
-    margin: 3px auto;
 }
 
 .links {
@@ -63,6 +57,7 @@ h2 {
 
 .col-sm-4 img, .col-sm-3 img {
     margin-bottom: 0.2rem;
+    border: 1px solid;
 }
 
 .col-sm-4 img {
@@ -102,4 +97,5 @@ img:hover:not(.nohover) {
 
 .intro_links img {
     margin: 5px;
+    filter: invert(1);
 }
