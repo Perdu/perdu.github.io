@@ -1,7 +1,11 @@
 body {
-    color:white;
     background-color:black;
-    font-size:12px;
+//    font-size:12px;
+    color: #cfcfcf;
+}
+
+h2 {
+    color: #8f8f8f;
 }
 
 #canvas_container {
@@ -13,10 +17,6 @@ body {
     border: thin solid green;
     z-index:100;
     margin: 3px auto;
-}
-
-.anim:hover, #last_anim:hover {
-    border: thin solid LimeGreen;
 }
 
 .links {
@@ -61,11 +61,45 @@ body {
     //color: #000;
 }
 
-.col-sm-4 img {
-    width: 60%;
+.col-sm-4 img, .col-sm-3 img {
     margin-bottom: 0.2rem;
 }
 
-img:hover {
+.col-sm-4 img {
+    width: 60%;
+}
+
+.col-sm-3 img {
+    width: 80%;
+}
+
+img:hover:not(.nohover) {
     opacity: 0.5;
+}
+
+.intro img {
+    border-radius: 10px;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.pic {
+    margin: 10px;
+}
+
+.intro_text {
+    display: inline;
+    text-align:left;
+}
+
+.intro_pic {
+    float: left;
+}
+
+.intro_links {
+    margin: 5px;
+}
+
+.intro_links img {
+    margin: 5px;
 }
