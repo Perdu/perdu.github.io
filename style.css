@@ -5,7 +5,7 @@ body {
 }
 
 h2 {
-    color: #8f8f8f;
+    color: #8f8fcf;
 }
 
 #canvas_container {
@@ -96,6 +96,14 @@ img:hover:not(.nohover) {
 }
 
 .intro_links img {
-    margin: 5px;
+    margin: 3px;
+}
+
+.invert {
     filter: invert(1);
+}
+
+ul {
+    margin-top: -10px;
+    list-style: inside;
 }
