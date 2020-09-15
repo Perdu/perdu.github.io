@@ -73,7 +73,7 @@ img:hover:not(.nohover) {
 }
 
 .intro img {
-    border-radius: 10px;
+    //border-radius: 10px;
     margin-right: 20px;
     vertical-align: top;
 }
@@ -106,4 +106,8 @@ img:hover:not(.nohover) {
 ul {
     margin-top: -10px;
     list-style: inside;
+}
+
+.img-thumbnail {
+    border-radius: 0;
 }
