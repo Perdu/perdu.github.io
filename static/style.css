@@ -2,7 +2,18 @@ body {
     background-color: #F5F5F5;
 //    font-size:12px;
     color: black;
-   font-family: "Share Tech", sans-serif;
+    font-family: "Share Tech", sans-serif;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+
+.main {
+  padding: 10px 10px;
+  text-align: center;
 }
 
 @font-face {
