@@ -6,6 +6,7 @@
     <meta name="description" content="Célestin Matte's CV">
     <title>CV Célestin Matte</title>
     <link href="static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
     
   
         <style type="text/css">
@@ -38,7 +39,6 @@
       }
       .contents_name:after {
           content: "_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________";
-//          content: "........................................................................................................................";
       }
       .conf {
 	  font-size:12px;
@@ -52,6 +52,7 @@
       }
       .pdf_link {
           text-align: right;
+          float: right;
       }
       .press {
           display: inline-block;
@@ -75,7 +76,8 @@
       #navigation {
           text-align: center;
           font-weight: 700;
-          background-color: #B8FFFF;
+          background-color: #0d6a6a;
+          color: white;
           padding: 6px 10px 6px 10px;
           font-size: 12pt;
       }
@@ -93,11 +95,10 @@
           z-index: auto;
       }
       .navig:hover, #navigation a:hover {
-	  background-color:#88CCFF;
-          //color: #88CCFF;
+	  background-color:#0d7a7a;
       }
       .infos {
-	  font-style:italic;
+	  //font-style:italic;
 	  font-size:14px;
 	  margin-bottom:-2px;
       }
@@ -170,10 +171,10 @@
 	  background-color:#B8FFFF;
       }
       .par:hover, .par_left:hover, .par_right:hover {
-	  background-color:#EAF7FF;
+	  background-color:#F5F5F5;
       }
       body {
-	  background-color:#F6F7FF;
+	  background-color:#F5F5F5;
 	  font-family:Arial, Helvetica, sans-serif;
 	  font-size:14px;
 	  //width: 720px;
@@ -182,11 +183,13 @@
       .main_content {
           width: 50%;
           margin: 2em auto;
-          border-radius         : 5px;
-          box-shadow         : 0px 1px 10px #888;
-          -o-box-shadow      : 0px 1px 10px #888;
-          -moz-box-shadow    : 0px 1px 10px #888;
-          -webkit-box-shadow : 0px 1px 10px #888;
+          //border-radius         : 5px;
+          //box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          border: 1px solid;
+          //box-shadow         : 0px 1px 10px #888;
+          //-o-box-shadow      : 0px 1px 10px #888;
+          //-moz-box-shadow    : 0px 1px 10px #888;
+          //-webkit-box-shadow : 0px 1px 10px #888;
           padding: 1em 2em;
           background: white;
       }
@@ -255,6 +258,7 @@
           }
 	  .main_content {
               width: 90%;
+              border: 0px;
 	  }
 	  body {
 	      background-color:white;
@@ -265,7 +269,7 @@
 	      line-height:130%;
 	  }
 	  h2 {
-	      font-size:20px;
+	      font-size:25px;
 	      font-weight: bold;
 	  }
 	  .rws, .skills td {
@@ -316,7 +320,7 @@
           
           <h1>Célestin Matte</h1>
 
-<p>Postdoctoral researcher at <a href="http://www.inria.fr/centre/sophia">Inria Sophia Antipolis</a> in the <a href="https://team.inria.fr/privatics/">Privatics</a> team.</p>
+<p><h2>Privacy researcher, Wi-Fi & Web tracking</h2></p>
 
 <p>I have worked in Wi-Fi &amp; physical tracking in the past.<br />
 Web tracking is now my main topic of interest.<br />
@@ -325,7 +329,7 @@ I plan on progressively moving to green IT topics.</p>
 <p>Currently available on the job market!</p>
 
 <div class="pdf_link noprint">
-  <a href="CV.pdf">Downloadable CV</a>
+  <a href="CV.pdf"><div class="contact">Downloadable CV</div></a>
 </div>
         </div>
       </div>
