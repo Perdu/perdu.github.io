@@ -107,9 +107,12 @@ img:hover:not(.nohover) {
     margin: 10px;
 }
 
-.intro_text {
+.intro_text_div {
     display: inline;
     text-align:left;
+}
+
+.intro_text {
     font-family: "Calibri", sans-serif;
 }
 
