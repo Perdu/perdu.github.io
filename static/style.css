@@ -150,3 +150,20 @@ img:hover:not(.nohover) {
 .img-thumbnail {
     border-radius: 0;
 }
+
+.back {
+    background-color: #0d6a6a;
+    text-align: center;
+    //border: solid 1px white;
+    color: white;
+    margin: 3px 3px auto;
+    float: left;
+    width: 100px;
+    padding: 5px;
+    position: absolute;
+}
+
+.back:hover {
+    background-color:#0d7a7a;
+    text-decoration: none;
+}
