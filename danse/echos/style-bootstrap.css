@@ -1,7 +1,7 @@
 body {
   //background-image: url('img/echos.png');
-  background-color: black;
-  color: #6f6f6f;
+  background-color: black!important;
+  color: #6f6f6f!important;
 }
 
 .col-lg-3 img {
