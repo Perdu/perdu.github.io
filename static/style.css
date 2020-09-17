@@ -167,3 +167,9 @@ img:hover:not(.nohover) {
     background-color:#0d7a7a;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 575px) {
+    .arrows {
+        display: none;
+    }
+}
