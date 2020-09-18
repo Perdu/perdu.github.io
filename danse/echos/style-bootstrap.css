@@ -18,7 +18,7 @@ box-shadow:inset 0 0 12px 4px #555555,
 @media (max-width: 992px) {
     .col-lg-3 img {
 	width: 35%;
-	margin-left: 0.2rem;
+	margin: 0.6rem;
     }
     .img-thumbnail {
 	padding:0.5px;
