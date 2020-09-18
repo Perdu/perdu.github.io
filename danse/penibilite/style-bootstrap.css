@@ -1,5 +1,6 @@
 body {
   background-image: url('img/1467470708.webp');
+  background-attachment: local!important;
   background-size: 100% 100%;
   background-color: #464646;
   color: #9f9f9f!important;

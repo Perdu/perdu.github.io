@@ -1,6 +1,6 @@
 body {
   background-image: url('img/1477818972.webp');
-  background-attachment: scroll;
+  background-attachment: local!important;
 }
 
 .col-lg-2 img {
