@@ -168,6 +168,11 @@ img:hover:not(.nohover) {
     text-decoration: none;
 }
 
+.lang {
+    float: left;
+    position: absolute;
+}
+
 @media only screen and (max-width: 575px) {
     .arrows {
         display: none;
