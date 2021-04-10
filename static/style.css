@@ -65,7 +65,7 @@ h2 {
    color: #0d6a6a;
 }
 
-.col-sm-4 img, .col-sm-3 img {
+.col-sm-4 img, .col-sm-3 img, .col-sm-6 img {
     margin-bottom: 0.2rem;
     border: 1px solid #0d6a6a;
 ;
@@ -172,6 +172,12 @@ img:hover:not(.nohover) {
     float: left;
     position: absolute;
 }
+
+.vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+r}
 
 @media only screen and (max-width: 575px) {
     .arrows {
