@@ -177,10 +177,14 @@ img:hover:not(.nohover) {
     position: relative;
     top: 50%;
     transform: translateY(50%);
-r}
+}
 
 @media only screen and (max-width: 575px) {
     .arrows {
         display: none;
+    }
+
+    .lead-title {
+        text-align: center;
     }
 }
