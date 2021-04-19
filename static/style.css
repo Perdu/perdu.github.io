@@ -177,6 +177,10 @@ img:hover:not(.nohover) {
     vertical-align: baseline;
 }
 
+.cv {
+    padding-bottom: 20px;
+}
+
 @media only screen and (min-width: 575px) {
     .vertical {
         position: relative;
