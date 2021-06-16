@@ -67,8 +67,10 @@ h2 {
 
 .col-sm-4 img, .col-sm-3 img, .col-sm-6 img {
     margin-bottom: 0.2rem;
+}
+
+.img-thumbnail {
     border: 1px solid #0d6a6a;
-;
 }
 
 .intro_core, .col-sm-12 h2 {
