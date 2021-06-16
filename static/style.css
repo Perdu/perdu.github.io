@@ -168,11 +168,6 @@ img:hover:not(.nohover) {
     text-decoration: none;
 }
 
-.lang {
-    float: left;
-    position: absolute;
-}
-
 .cv img {
     vertical-align: baseline;
 }
