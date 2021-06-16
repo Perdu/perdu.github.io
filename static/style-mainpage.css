@@ -1,3 +1,11 @@
 .lang {
     text-align: left;
 }
+
+.intro_pic {
+    float: left;
+}
+
+.pic {
+    width: 124px;
+}

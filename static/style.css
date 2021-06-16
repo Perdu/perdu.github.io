@@ -127,10 +127,6 @@ img:hover:not(.nohover) {
     font-family: "Calibri", sans-serif;
 }
 
-.intro_pic {
-    float: left;
-}
-
 .intro_links {
     margin: 5px;
 }
