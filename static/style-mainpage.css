@@ -9,3 +9,15 @@
 .pic {
     width: 124px;
 }
+
+.intro_text ul {
+    margin: 0;
+}
+
+.intro_list {
+    display: inline-block;
+}
+
+.post_ul {
+    margin-top: 16px;
+}
