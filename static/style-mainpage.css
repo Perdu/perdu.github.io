@@ -21,3 +21,8 @@
 .post_ul {
     margin-top: 16px;
 }
+
+/* Accessibility (contrast) */
+a {
+    color: #0c009f;
+}
