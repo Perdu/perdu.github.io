@@ -22,9 +22,28 @@
     margin-top: 16px;
 }
 
-.cv img, .cvresearch img {
+.cv_link img {
+    height: 100px;
+}
+
+.cv_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv_link label {
+    margin-left: -20px;
+}
+
+.cvresearch img {
     height: 100px;
     width: 100px;
+}
+
+.cv_link {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .pad {
