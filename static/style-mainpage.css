@@ -22,9 +22,19 @@
     margin-top: 16px;
 }
 
-.cv img {
+.cv img, .cvresearch img {
     height: 100px;
     width: 100px;
+}
+
+.col-sm-4 {
+}
+
+.wrapper {
+    border: 1px solid #000000; /* Border style */
+    margin: 10px; /* Add padding for spacing */
+    padding: 10px;
+    height: 95%;
 }
 
 /* Accessibility (contrast) */
