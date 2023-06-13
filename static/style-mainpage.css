@@ -111,10 +111,13 @@
 }
 
 .wrapper {
-    border: 1px solid #000000; /* Border style */
-    margin: 10px; /* Add padding for spacing */
+    border: 1px solid #ccc;
+    margin: 10px;
     padding: 10px;
     height: 95%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
 /* Accessibility (contrast) */
