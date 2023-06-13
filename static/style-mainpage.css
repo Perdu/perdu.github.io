@@ -33,6 +33,19 @@
     background-color:#0d6a6a;
 }
 
+#cv {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+}
+
+#cv:hover {
+    opacity: 0.5;
+}
+
+#cv *:hover {
+    opacity: 1;
+}
 
 .post_ul {
     margin-top: 16px;
@@ -42,13 +55,13 @@
     height: 100px;
 }
 
-.cv_link {
+.cv_link div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.cv_link label {
+.cv_link span {
     margin-left: -20px;
 }
 
