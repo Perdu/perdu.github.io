@@ -80,20 +80,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-.contact {
-    text-align: center;
-    border: solid 1px white;
-    color: white;
-    background-color: #0d7a7a;
-    margin: 0 auto;
-    width: 200px;
-    padding: 5px;
-}
-
-.contact:hover {
-    background-color:#0d6a6a;
-}
-
 .nostyle:hover {
     text-decoration: none;
 }
