@@ -2,8 +2,38 @@
     text-align: left;
 }
 
+.intro_core, .col-sm-12 h2 {
+    padding: 15px;
+    background-color: #0d6a6a;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.intro img {
+    //border-radius: 10px;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
 .intro_pic {
     float: left;
+}
+
+.intro_text_div {
+    display: inline;
+    text-align:left;
+}
+
+.intro_text {
+    font-family: "Calibri", sans-serif;
+}
+
+.intro_links {
+    margin: 5px;
+}
+
+.intro_links img {
+    margin: 5px;
 }
 
 .pic {
@@ -12,6 +42,7 @@
 
 .intro_text ul {
     margin: 0;
+    list-style: inside;
 }
 
 .intro_list {
