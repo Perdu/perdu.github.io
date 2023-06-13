@@ -1,51 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Célestin Matte's webpage">
-    <meta name="author" content="">
-    <link rel="icon" href="danse/cellulardance/img/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="danse/cellulardance/img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="danse/cellulardance/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="danse/cellulardance/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="danse/cellulardance/img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="danse/cellulardance/img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="danse/cellulardance/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="danse/cellulardance/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="danse/cellulardance/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="danse/cellulardance/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="danse/cellulardance/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="danse/cellulardance/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="danse/cellulardance/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="danse/cellulardance/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="danse/cellulardance/img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Célestin Matte's CV">
+    <title>CV Célestin Matte</title>
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+    
+  
+        <style type="text/css">
+      a {
+	  color:light-red;
+	  text-decoration: none;
+      }
+      .abstract {
+          border: 1px solid black;
+          padding: 3px;
+          margin: 5px;
+          margin-left: 10px;
+          
+          display: none;
+          
+      }
+      #contents_table {
+          width: 900px;
+      }
+      .contents_name {
+          width: 800px;
+          float: left;
+          overflow: hidden;
+          white-space: nowrap
+      }
+      .contents_page {
+          width: 100px;
+          float: left;
+          overflow: hidden;
+      }
+      .contents_name:after {
+          content: "_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________";
+      }
+      .nostyle {
+          margin-top: -28px;
+          float: left;
+      }
+      .conf {
+	  font-size:12px;
+      }
+      .conf_name {
+          font-weight: bold;
+      }
+      .conf_name a {
+          text-decoration: none;
+          color: inherit;
+      }
+      .pdf_link {
+          text-align: right;
+          float: right;
+      }
+      .press {
+          display: inline-block;
+          min-width: 10px;
+          padding: 3px 7px;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 1;
+          color: #fff;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          background-color: #777;
+          border-radius: 10px;
+          text-decoration: none;
+      }
+      .press a {
+          text-decoration: none;
+          color: inherit;
+      }
+      #navigation {
+          text-align: center;
+          font-weight: 700;
+          background-color: #0d6a6a;
+          color: white;
+          padding: 6px 10px 6px 10px;
+          font-size: 12pt;
+      }
+      #navigation a {
+          text-decoration: none;
+          color: inherit;
+          padding: 8px 10px 7px 10px;
+      }
+      .navig {
+          box-sizing: content-box;
+          display: inline;
+          float: none;
+          line-height: normal;
+          position: static;
+          z-index: auto;
+      }
+      .navig:hover, #navigation a:hover {
+	  background-color:#0d7a7a;
+      }
+      .infos {
+	  //font-style:italic;
+	  font-size:14px;
+	  margin-bottom:-2px;
+      }
+      .date {
+	  float:left;
+          font-weight: bold;
+      }
+      h2 {
+	  margin-top:-10px;
+	  //    margin-top:-5px;
+	  margin-bottom:1px;
+	  padding-left:5px;
+      }
+      .par, .par_left, .par_right {
+	  background-color:white;
+	  text-align:left;
+	  border-style:none;
+	  border-radius:7px;
+	  border-color:lightgrey;
+	  //border-color:white;
+	  border-width:2px;
+	  padding:2px;
+	  padding-left:5px;
+	  //padding-bottom:15px;
+      }
+      .par {
+	  width:98%;
+	  line-height:130%;
+      }
+      .par_left, .left {
+	  float:left;
+	  width:47%;
+      }
+      .par_left {
+	  margin-bottom:5px;
+      }
+      .par_right {
+	  float:right;
+	  width:47%;
+      }
+      .ul_xp {
+          padding-left: 20px;
+      }
+      .right {
+	  float:left;
+	  margin-left:15px;
+      }
+      .clear {
+	  clear:both;
+          
+	  margin-top:25px;
+          
+      }
+      .content {
+	  margin:0px;
+	  margin-left:150px;
+      }
+      .content2 {
+	  //margin:5px;
+	  margin-left:110px;
+      }
+      .content3 {
+	  padding-left:4px;
+      }
+      .content4 {
+	  padding-top:3px;
+	  padding-left:3px;
+      }
+      .skills td {
+	  text-align:center;
+	  width:300px;
+	  border-radius:5px;
+	  background-color:#B8FFFF;
+      }
+      .par:hover, .par_left:hover, .par_right:hover {
+	  background-color:#F5F5F5;
+      }
+      body {
+	  background-color:#F5F5F5;
+	  font-family:Arial, Helvetica, sans-serif;
+	  font-size:14px;
+	  //width: 720px;
+	  //background:linear-gradient(#88CCFF, white);
+      }
+      .main_content {
+          width: 50%;
+          margin: 2em auto;
+          //border-radius         : 5px;
+          //box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          border: 1px solid;
+          //box-shadow         : 0px 1px 10px #888;
+          //-o-box-shadow      : 0px 1px 10px #888;
+          //-moz-box-shadow    : 0px 1px 10px #888;
+          //-webkit-box-shadow : 0px 1px 10px #888;
+          padding: 1em 2em;
+          background: white;
+      }
+      ul {
+	  list-style-type:none;
+      }
+      ul ul {
+	  list-style-type:disc;
+      }
+      .bulleted {
+	  list-style-type:disc;
+      }
+      .rws {
+	  padding:3px;
+	  border-radius:5px;
+	  background-color:#B8FFFF;
+	  text-align:center;
+      }
+      .photo {
+	  //float:right;
+	  //margin-top:-5px;
+      }
+      .img_photo {
+	  //height:200px;
+      }
+      .head {
+	  //width:700px;
+      }
+      .basdepage {display:none;}
+      .renvoi { display:none;}
+      .github {
+	  width:25px;
+      }
+      .icon {
+          width:15px;
+      }
+      .icon:hover {
+	  opacity:0.3;
+      }
+      .title {
+          opacity: 0.6;
+      }
+      .back {
+          margin: 3px;
+      }
+      @media only screen and (max-width: 600px) {
+	  .main_content {
+              width: 90%;
+              margin: 3em auto;
+	  }
+          .nostyle {
+              margin-top: -42px;
+              float: left;
+          }
+          .img_photo {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          #navigation {
+              display: none;
+          }
+      }
+      @media print {
+	  .noprint, .icon { display: none; }
+	  .space { height: 70px; }
+          .press {
+              font-weight: normal;
+              font-style: italic;
+          }
+	  .main_content {
+              width: 90%;
+              border: 0px;
+	  }
+	  body {
+	      background-color:white;
+	      font-size:15px;
+	      padding-bottom: 5.5em;
+	  }
+	  .par {
+	      line-height:130%;
+	  }
+	  h2 {
+	      font-size:25px;
+	      font-weight: bold;
+	  }
+	  .rws, .skills td {
+	      border:solid;
+	      border-width:1px;
+	      background-color:white;
+	  }
+	  a {
+               color:black;
+	      text-decoration: none !important;
+	  }
+          #contents_table a {
+              color:black;
+	      text-decoration: none !important;
+          }
+	  .basdepage {
+	      display:block;
+	      font-size:10px;
+	      width:800px;
+	      margin-bottom: 140px;
+	  }
+	  .renvoi {
+	      display:inline;
+	      position: relative;
+	      bottom: 1px;
+	      font-size: .7em;
+	      line-height: .7em;
+	      vertical-align:super;
+	      text-decoration:none;;
+	  }
+	  .bdp {
+	      float:left;
+	      width:370px;
+	  }
+          .ul_xp {
+              padding-left: 5px;
+          }
+      }
+    </style>
+  
 
-    <link href="/bootstrap.min.css" rel="stylesheet">
-  <title>Célestin Matte - Privacy engineer, devops, PhD</title>
   </head>
   <body>
-    <a href="../" class="noprint nostyle"><div class="back">← Back</div></a>
-    <div class="container-fluid vertical">
-      <div class="main">
-	<div class="row">
-	  <div class="col-sm-6">
-	    <h3>DevOps</h3>
-	    <a href="devops.html"><img src="/img/cv_devops.png" class="img-thumbnail" alt="DevOps CV"/></a>
-          </div>
-	  <div class="col-sm-6">
-	    <h3>Privacy researcher (obsolete)</h3>
-	    <a href="research.html"><img src="/img/cv.png" class="img-thumbnail" alt="Research CV"/></a>
-          </div>
+    <a href="/" class="noprint nostyle"><div class="back">← Back</div></a>
+    <div class="main_content">
+      <div class="head row">
+        <div class="photo col-sm-2">
+	  <img class="img_photo img-fluid nohover" srcset="static/photo_124.webp 124w,
+                                                           static/photo_248.webp 248w,
+                                                           static/photo_496.webp 496w" alt="photo" />
+        </div>
+        <div class="infos col-sm-10">
+          
+  
+    <span class="lead-title">
+<h1>Célestin Matte</h1><p><h2>DevOps System Administrator</h2></p></span>
+	contact@cmatte.me<br/>
+	<a href="https://cmatte.me">https://cmatte.me</a><br/>31 years old<br/>
+        Strasbourg, France
+  
+
+          
+  
+    <div class="pdf_link noprint"><a href="CV_devops.pdf"><div class="contact">Downloadable CV</div></a></div>
+  
+
+          
         </div>
       </div>
+      
+      
+
+      <div class="clear">
+    <h2>Education</h2>
+</div>
+    <ul class="par">
+      <li>
+	<div class="date">2017</div>
+	<div class="content2">
+	  <b>PhD</b> in Computer Science, University of Lyon, INSA Lyon, France.
+	</div>
+      </li>
+      <li>
+	<div class="date">2014</div>
+	<div class="content2">
+	  <b>Master</b> (<i>Diplôme d'ingénieur</i>) at <b>Ensimag</b>, Grenoble INP. One semester in Aalto University (Finland).<br />
+	  Major: Engineering of Information Systems.
+	</div>
+      </li>
+      <li>
+	<div class="date">2011</div>
+	<div class="content2">
+	  <b>DUT</b> in computer sciences in Metz, first in the class.
+	  One semester in Germany.
+	</div>
+      </li>
+      
+    </ul>
+      
+  
+    <div class="clear">
+    <h2>Professional experience</h2>
+</div>
+    <ul class="par">
+      <li>
+	<div class="date">2022</div>
+	<div class="content2">
+          System Administrator for IRIS (Canon group): manage ~50 Linux servers (upgrade all servers, implement security measures, debug issues and critical crashes)
+        </div>
+      </li>
+      <li>
+	<div class="date">2021 - now</div>
+	<div class="content2">
+	  Freelance DevOps System Administrator for Software in the Public Interest:
+          <ul class="ul_xp">
+            <li>migrate running systems to up-to-date and maintained cloud-based servers or services.</li>
+            <li>Write <a href="https://gitlab.com/cmatte/ansible-pglister/">Ansible script<span class="renvoi">1</span></a> to install open source mailing list software PGLister, work on patches with upstream.</li>
+            <li><a href="https://gitlab.com/spi-inc/members-django">Rewrite<span class="renvoi">2</span></a> a Flask web application in Django (Python).</li>
+          </ul>
+	</div>
+      </li>
+      <li>
+	<div class="date">2020 - 2021</div>
+	<div class="content2">
+	  Freelance engineer at ITG Consulting
+	</div>
+      </li>
+      <li>
+	<div class="date">2019 - 2020</div>
+	<div class="content2">
+	  Postdoctoral researcher at Inria Sophia Antipolis: web tracking.<br />
+          2 publications in peer-reviewed conferences (one top conference) <a href="https://hal.inria.fr/hal-01282900"><span class="renvoi">3</span></a> <a href="https://hal.inria.fr/hal-01176842"><span class="renvoi">4</span></a> <a href="https://hal.inria.fr/hal-01330479"><span class="renvoi">5</span></a> <a href="https://hal.inria.fr/hal-01330476"><span class="renvoi">6</span></a><span class="noprint"> [<a href="https://www-sop.inria.fr/members/Nataliia.Bielova/cookiebanners/">1</a>, <a href="https://hal.inria.fr/hal-02566891">2</a>]</span> + 1 journal publication [<a href="https://techreg.org/index.php/techreg/article/view/43">1</a></span>]<br /></div>
+      </li>
+      <li>
+	<div class="date">2018</div>
+	<div class="content2">
+          Off year for <a href="https://cmatte.me/danse">personal projects<span class="renvoi">7</span></a>
+        </div>
+	<div class="date">2014 - 2017</div>
+	<div class="content2">
+	  PhD student at CITI Lab - Inria Privatics: privacy-preserving Wi-Fi tracking.<br />Thesis: Wi-Fi Tracking: Fingerprinting Attacks and Countermeasures (<a href="https://hal.inria.fr/tel-01659783v1">Manuscript<span class="renvoi">8</span></a>, <a href="https://ploudseeker.com/files/docs/slides_these.pdf">slides<span class="renvoi">9</span></a>)<br />4 publications in peer-reviewed conferences<a href="https://hal.inria.fr/hal-01282900"><span class="renvoi">3</span></a> <a href="https://hal.inria.fr/hal-01176842"><span class="renvoi">4</span></a> <a href="https://hal.inria.fr/hal-01330479"><span class="renvoi">5</span></a> <a href="https://hal.inria.fr/hal-01330476"><span class="renvoi">6</span></a><span class="noprint"> [<a href="https://hal.inria.fr/hal-01282900">1</a>, <a href="https://hal.inria.fr/hal-01176842">2</a>, <a href="https://hal.inria.fr/hal-01330479">3</a>, <a href="https://hal.inria.fr/hal-01330476">4</a>]</span> + 4 publications in general public technical journals<a href="https://bit.ly/misc81"><span class="renvoi">10</span></a> <a href="https://bit.ly/glmfhs84"><span class="renvoi">11</span></a> <a href="https://bit.ly/glmf202"><span class="renvoi">12</span></a> <a href="https://bit.ly/misc96"><span class="renvoi">13</span></a><span class="noprint"> [<a href="https://bit.ly/misc81">1</a>, <a href="https://bit.ly/glmfhs84">2</a>, <a href="https://bit.ly/glmf202">3</a>, <a href="https://bit.ly/misc96">4</a>]</span><br />Teaching (3 years): Algorithmics and programming. EN + FR, 1st-year Bachelor level.<br />
+	  Installation of a Wi-Fi tracking demonstration prototype at the <i>Cité des Sciences et de l'Industrie</i> (Paris) for the <a href="http://www.cite-sciences.fr/fr/au-programme/expos-temporaires/terra-data/">Terra Data exhibition<span class="renvoi">14</span></a>.</div>
+      </li>
+      <li>
+	<div class="date">2014</div>
+	<div class="content2">
+	  6-month internship at CITI Lab (Inria, Lyon): privacy problems in Wi-Fi technology.
+	</div>
+      </li>
+      <li>
+	<div class="date">2013</div>
+	<div class="content2">
+	  2-month internship at TDF: Solution for monitoring QoS of a network architecture.<br /></div>
+      </li>
+      <li>
+	<div class="date">2012</div>
+	<div class="content2">
+	  2-month internship at Digigram: Installation and configuration of a bugtracking system (Redmine), defining of needs and import of existing datas.
+	</div>
+      </li>
+      <li>
+	<div class="date">2011</div>
+	<div class="content2">
+	  6 months (internship + half-time job): Hochschule Mittweida, Germany.<br/>
+	  Creation of a reporting system and a data warehouse (Qlikvew, Drupal).
+	</div>
+      </li>
+    </ul>
+  
+
+      
+  
+        <div>
+      <h2>Technical skills</h2>
     </div>
-    <link href="/static/style.css" rel="stylesheet" type="text/css">
-    <script src="jquery-1.9.1.min.js"></script>
-    <script src="/bootstrap.min.js"></script>
+  <ul class="par">
+    <li>
+      <ul class="par">
+	<li>
+          OS:
+        Debian,
+        Arch Linux,
+        Ubuntu,
+        CentOS
+        </Li>
+        <li>
+        DevOps tools:
+        Bash,
+        git,
+        Gitlab,
+        Ansible,
+        Docker
+        </Li>
+        <li>
+        Software:
+        Apache, nginx, MariaDB, postgreSQL, postfix, dovecot, SSH, fail2ban, php-fpm, Samba
+        </Li>
+        <li>
+          Cloud: Google Cloud Platform, OVH, Gandi
+        </li>
+        <li>
+	Programming:
+        Python/Flask,
+        Django,
+        PHP,
+        JavaScript</li>
+      </ul>
+    </li>
+  </ul>
+  
+
+
+      
+
+      
+      
+      
+      
+      
+  
+    <div id="software">
+  <div class="clear">
+    <h2>Software <a href="https://github.com/Perdu/"><img src="static/GitHub-Mark-32px.png" class="github icon noprint"/></a></h2>
+  </div>
+  <ul class="par">
+    <li>
+      <ul class="par">
+
+	<li><a href="https://github.com/Perdu/wombat">Wombat<span class="renvoi">15</span></a> A Wi-Fi tracking system for testing and demonstrational purpose <span class="press">Python</span> <span class="press">Ansible</span> <span class="press">Arch Linux</span></li>
+
+	<li><a href="https://github.com/Perdu/Cookie-Glasses">Cookie-Glasses<span class="renvoi">16</span></a> A browser extension showing consent registered by cookie banners of IAB Europe's Transparency & Consent Framework <span class="press">JavaScript</span> <span class="press">WebExtensions</span></li>
+	<li><a href="https://github.com/Perdu/vendorlistexplorer">Vendorlist explorer<span class="renvoi">17</span></a> Web application that extracts information from the vendorlist of IAB Europe Transparency & Consent Framework and makes this information human-readable. <span class="press">Python</span> <span class="press">Flask</span> <span class="press">SQLAlchemy</span></li>
+        <li><a href="https://github.com/Perdu/Cookinspect">Cookinspect<span class="renvoi">18</span></a> Selenium-based crawler used to find violations in cookie banners of IAB Europe's Transparency & Consent Framework <span class="press">Python</span> <span class="press">Selenium</span> <span class="press">WebExtensions</span> <span class="press">SQLAlchemy</span></li>
+
+
+	<li><a href="https://gitlab.com/cmatte/ansible-pglister/">Ansible-PGLister<span class="renvoi">1</span></a> Ansible script to install all components of the PGLister mailing list system <span class="press">Ansible</span></li>
+	<li><a href="https://gitlab.com/spi-inc/members-django">Members-django<span class="renvoi">2</span></a> Rewriting of SPI's membership application using Django <span class="press">Python</span> <span class="press">Django</span></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+  
+
+      <div class="clear" id="opensource">
+  <h2>Contributions to open source projects</h2>
+  <ul class="par">
+    <li>
+      <ul class="par">
+        <li><a href="https://aur.archlinux.org/packages/wyrd-git">wyrd<span class="renvoi">19</span></a> <span class="press">Sysadmin</span> Fix compile issue and maintain AUR package (Arch Linux)</li>
+        <li><a href="https://gitlab.com/pglister/pglister/-/commits/master?author=cmatte">PGLister<span class="renvoi">20</span></a> and <a href="https://github.com/postgres/pgarchives/commits?author=Perdu">PGArchives<span class="renvoi">21</span></a> <span class="press">Django</span> (8 commits) Fix bugs and minor improvements related to the install process</li>
+        <li><a href="https://github.com/ansible-collections/community.general/commits?author=Perdu">Ansible community.general<span class="renvoi">22</span></a> <span class="press">Sysadmin</span> <span class="press">Python</span> (1 commit) Add new feature for pacman</li>
+        <li><a href="https://github.com/cavi-au/Consent-O-Matic/commits?author=Perdu">Consent-O-Matic<span class="renvoi">23</span></a> <span class="press">JavaScript</span> (9 commits) Improve behaviour, handle new cases</li>
+        <li><a href="https://github.com/ranger/ranger/commits?author=Perdu">ranger<span class="renvoi">24</span></a> <span class="press">Python</span> (5 commits) Bugfix, new functionality</li>
+        <li><a href="https://github.com/mathieui/poezio/commits?author=Perdu">poezio<span class="renvoi">25</span></a> <span class="press">Python</span> (8 commits) New functionalities</li>
+
+        <li><a href="https://github.com/git/git/commits?author=Perdu">git (Git-Mediawiki)<span class="renvoi">26</span></a> <span class="press">Perl</span> (32 commits) Code cleaning, new functionality</li>
+
+      </ul>
+    </li>
+    Bug reports leading to fixes: 
+    
+    <a href="https://github.com/edio/randrctl/issues/19">randrctl</a>,
+    <a href="https://github.com/dtschump/gmic/issues/158">gmic</a>,
+    <a href="https://github.com/disconnectme/disconnect-tracking-protection/issues/120">disconnect-tracking-protection</a>,
+    <a href="https://github.com/mbacarella/curses/issues/4">OCaml Curses</a>
+
+  </ul>
+</div>
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+  
+    <div class="clear" id="misc">
+  <h2>Misc.</h2>
+  <ul class="par">
+    <li>
+      Languages: French (native), English (excellent), German (average).<br />
+      Driving license.<br/>
+
+      "<a href="https://www.insa-lyon.fr/sites/www.insa-lyon.fr/files/plaquette-art-etudes.pdf#page=8">Study-Arts<span class="renvoi">27</span></a>" dance diploma from INSA Lyon.<br />
+      Selected personal projects:
+      <ul>
+
+	<li>System administrator for an association in 2012-14: in charge of servers hosting student websites (<a href="sysadmin_polecom_en.txt">Summary<span class="renvoi">28</span></a>) <span class="press">sysadmin</span> <span class="press">Debian</span></li>
+
+	<li>Developer and administrator for the online game <a href="http://www.sistearth.com">Sistearth<span class="renvoi">29</span></a> <span class="press">PHP</span> <span class="press">MySQL</span> <span class="press">Javascript</span> <span class="press">sysadmin</span></li>
+
+        <li>Maintaining 4 personal servers on Arch Linux and Debian (apache, Flask, postfix, dovecot, mariadb, fail2ban, openvpn, php-fpm)</li>
+
+	<li>Wrote several dancing shows, some using digital art (Kinect sensors) (<a href="/danse">Website<span class="renvoi">7</span></a>) <span class="press">C</span> <span class="press">C++</span> <span class="press">libfreenect</span> <span class="press">OpenCL</span> <span class="press">SDL</span></li>
+
+        <li><a href="https://github.com/Perdu/panu">panu<span class="renvoi">30</span></a> A XMPP (Jabber) bot <span class="press">Python</span> <span class="press">XMPP</span> <span class="press">Slixmpp</span> <span class="press">SQLAlchemy</span></li>
+
+
+      </ul>
+    </li>
+  </ul>
+</div>
+  
+
+
+      
+
+      
+      
+      
+
+      <div class="clear" id="contact">
+  <h2>Contact</h2>
+  <ul class="par">
+    <li>
+      contact@cmatte.me (<a href="gpg">GPG<span class="renvoi">31</span></a>: 0xCB6A8BD6 &#8211; 6430 156C 58FF 95B8 7EA9 0F30 A1A6 28FE CB6A 8BD6)<br/>
+      Twitter: <a href="https://twitter.com/CelestinMatte">@CelestinMatte</a>
+    </li>
+  </ul>
+</div>
+          <div class="basdepage">
+      <div class="bdp">
+        <h3>Links</h3>1: https://gitlab.com/cmatte/ansible-pglister/<br />
+2: https://gitlab.com/spi-inc/members-django<br />
+3: https://hal.inria.fr/hal-01282900<br />
+4: https://hal.inria.fr/hal-01176842<br />
+5: https://hal.inria.fr/hal-01330479<br />
+6: https://hal.inria.fr/hal-01330476<br />
+7: https://cmatte.me/danse<br />
+8: https://hal.inria.fr/tel-01659783v1<br />
+9: https://ploudseeker.com/files/docs/slides_these.pdf<br />
+10: https://bit.ly/misc81<br />
+11: https://bit.ly/glmfhs84<br />
+12: https://bit.ly/glmf202<br />
+13: https://bit.ly/misc96<br />
+14: http://www.cite-sciences.fr/fr/au-programme/expos-temporaires/terra-data/<br />
+15: https://github.com/Perdu/wombat<br />
+16: https://github.com/Perdu/Cookie-Glasses<br />
+</div><div class="bdp">
+17: https://github.com/Perdu/vendorlistexplorer<br />
+18: https://github.com/Perdu/Cookinspect<br />
+19: https://aur.archlinux.org/packages/wyrd-git<br />
+20: https://gitlab.com/pglister/pglister/-/commits/master?author=cmatte<br />
+21: https://github.com/postgres/pgarchives/commits?author=Perdu<br />
+22: https://github.com/ansible-collections/community.general/commits?author=Perdu<br />
+23: https://github.com/cavi-au/Consent-O-Matic/commits?author=Perdu<br />
+24: https://github.com/ranger/ranger/commits?author=Perdu<br />
+25: https://github.com/mathieui/poezio/commits?author=Perdu<br />
+26: https://github.com/git/git/commits?author=Perdu<br />
+27: https://www.insa-lyon.fr/sites/www.insa-lyon.fr/files/plaquette-art-etudes.pdf#page=8<br />
+28: http://cmatte.me/sysadmin_polecom_en.txt<br />
+29: http://www.sistearth.com<br />
+30: https://github.com/Perdu/panu<br />
+31: https://cmatte.me/CV/gpg<br />
+
+      </div>
+    </div>
+    </div>
   </body>
 </html>
