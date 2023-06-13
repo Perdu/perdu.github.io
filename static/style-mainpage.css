@@ -15,7 +15,11 @@
 }
 
 .intro_list {
-    display: inline-block;
+//    display: inline-block;
+}
+
+.contact {
+    font-size: 20px;
 }
 
 .post_ul {
