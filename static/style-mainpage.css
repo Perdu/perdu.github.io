@@ -27,7 +27,8 @@
     width: 100px;
 }
 
-.col-sm-4 {
+.pad {
+    margin-top: 20px;
 }
 
 .wrapper {
