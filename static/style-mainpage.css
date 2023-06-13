@@ -22,6 +22,10 @@
     margin-top: 16px;
 }
 
+.cv img {
+    height: 100px;
+}
+
 /* Accessibility (contrast) */
 a {
     color: #0c009f;
