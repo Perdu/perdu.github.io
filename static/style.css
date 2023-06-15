@@ -78,6 +78,12 @@ h2 {
     margin-bottom: 0.2rem;
 }
 
+.pdf_link {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .img-thumbnail {
     border: 1px solid #0d6a6a;
 }
