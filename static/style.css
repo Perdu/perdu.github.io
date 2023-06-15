@@ -16,6 +16,15 @@ body {
   text-align: center;
 }
 
+.section {
+    margin-top: -2px;
+    margin-bottom: 20px;
+}
+
+#xp {
+    margin-bottom: 30px;
+}
+
 @font-face {
   font-family: 'Roboto Slab';
   font-style: normal;
@@ -124,6 +133,22 @@ img:hover:not(.nohover) {
 
 .cv {
     padding-bottom: 20px;
+}
+
+.jobtitle {
+    font-weight: bold;
+}
+
+.employer {
+    font-style: italic;
+}
+
+.employer a {
+    color: #0a3bff;
+}
+
+.description {
+    color: #808080;
 }
 
 @media only screen and (min-width: 575px) {
