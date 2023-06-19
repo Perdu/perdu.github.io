@@ -119,6 +119,20 @@ img:hover:not(.nohover) {
     border-radius: 0;
 }
 
+.strengths {
+    text-align: right;
+    float: right;
+    color: #808080;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 43px;
+}
+
+.strengths ul {
+    font-style: italic;
+}
+
 .back {
     background-color: #0d6a6a;
     text-align: center;
@@ -152,7 +166,7 @@ img:hover:not(.nohover) {
     font-style: italic;
 }
 
-.employer a {
+.employer a, .education a {
     color: #0a3bff;
 }
 
@@ -168,12 +182,14 @@ img:hover:not(.nohover) {
     }
 }
 
-@media only screen and (max-width: 575px) {
-    .arrows {
-        display: none;
-    }
-
+@media only screen and (max-width: 1265px) {
     .lead-title {
         text-align: center;
+    }
+    .img_photo {
+        padding-right: 0px !important;
+    }
+    .strengths {
+        padding-right: 15px;
     }
 }
