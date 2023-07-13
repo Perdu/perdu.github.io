@@ -1,3 +1,38 @@
+.ciename {
+    float: left;
+    height: 50px;
+}
+
+.card-header a {
+    color: inherit;
+}
+
+.hoverline {
+    transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    -webkit-transition: 0.25s all;
+}
+
+.hoverline:hover {
+    border-bottom: 3px solid transparent !important;
+}
+
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
+}
+
+.fa-chevron-down {
+    width: 20px;
+}
+
+.card-text {
+    text-align: left !important;
+}
+
 .lang {
     text-align: left;
 }
