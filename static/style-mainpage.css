@@ -3,14 +3,12 @@
     height: 50px;
 }
 
-.card-header a {
-    color: inherit;
+.jobtitle {
+    font-style: italic;
 }
 
-.hoverline {
-    transition: 0.25s all;
-    -moz-transition: 0.25s all;
-    -webkit-transition: 0.25s all;
+.card-header a {
+    color: inherit;
 }
 
 .hoverline:hover {
