@@ -72,7 +72,9 @@
 }
 
 .intro_links {
-    margin: 5px 5px 5px 0;
+    margin: 10px 5px 0 0;
+    display: flex;
+    justify-content: center;
 }
 
 .intro_links img {
@@ -104,7 +106,7 @@
     padding: 5px;
 }
 
-.contact:hover {
+.contact:hover, .cv_link_desc:hover {
     background-color:#0d6a6a;
 }
 
@@ -112,14 +114,6 @@
     text-decoration: none;
     color: inherit;
     white-space: nowrap;
-}
-
-#cv:hover {
-    opacity: 0.5;
-}
-
-#cv *:hover {
-    opacity: 1;
 }
 
 .post_ul {
@@ -131,9 +125,24 @@
 }
 
 .cv_link div {
-    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.cv_link_desc {
+    text-align: center;
+    border: 1px solid;
+    background-color: #0d7a7a;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.cv_link_desc img {
+    margin: 0 auto;
+}
+
+.cv_link_desc p {
+    margin-bottom: 1px;
 }
 
 .cv_link span {
