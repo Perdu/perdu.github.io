@@ -54,9 +54,8 @@
 }
 
 .intro img {
-    //border-radius: 10px;
     margin-right: 20px;
-    vertical-align: top;
+   vertical-align: top;
 }
 
 .intro_pic {
@@ -73,7 +72,7 @@
 }
 
 .intro_links {
-    margin: 5px;
+    margin: 5px 5px 5px 0;
 }
 
 .intro_links img {
@@ -82,6 +81,7 @@
 
 .pic {
     width: 124px;
+    margin: 5px 20px 10px 5px;
 }
 
 .intro_text ul {
