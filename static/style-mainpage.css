@@ -121,7 +121,12 @@
 }
 
 .cv_link img {
-    height: 100px;
+    height: 80px;
+    padding-top: 5px;
+}
+
+.cv_link img:hover {
+    opacity: 1;
 }
 
 .cv_link div {
