@@ -53,15 +53,6 @@
     margin: 10px auto;
 }
 
-.intro img {
-    margin-right: 20px;
-   vertical-align: top;
-}
-
-.intro_pic {
-    float: left;
-}
-
 .intro_text_div {
     display: inline;
     text-align:left;
@@ -85,6 +76,7 @@
 .pic {
     width: 140px;
     margin: 5px 20px 10px 5px;
+    vertical-align: top;
 }
 
 .intro_text ul {
@@ -182,4 +174,15 @@
 /* Accessibility (contrast) */
 a {
     color: #0c009f;
+}
+
+@media only screen and (min-width: 450px) {
+    .intro_pic {
+        float: left;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .pic {
+        margin-right: 5px;
+    }
 }
