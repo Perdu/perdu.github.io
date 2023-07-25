@@ -107,6 +107,10 @@ img:hover:not(.nohover) {
     opacity: 0.5;
 }
 
+.pic {
+    margin: 10px;
+}
+
 .invert {
     filter: invert(1);
 }
