@@ -30,8 +30,8 @@
   transition: .3s transform ease-in-out;
 }
 
-.card-header .collapsed .fa {
-  transform: rotate(90deg);
+.card-header :not(.collapsed) .fa-chevron-down {
+  transform: rotate(180deg);
 }
 
 .fa-chevron-down {
