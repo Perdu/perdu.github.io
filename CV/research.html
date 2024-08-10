@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Célestin Matte's CV">
+    <title>CV Célestin Matte</title>
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+    
+  
+        <style type="text/css">
+      a {
+	  color:light-red;
+	  text-decoration: none;
+      }
+      .abstract {
+          border: 1px solid black;
+          padding: 3px;
+          margin: 5px;
+          margin-left: 10px;
+          
+          display: none;
+          
+      }
+      #contents_table {
+          width: 900px;
+      }
+      .contents_name {
+          width: 800px;
+          float: left;
+          overflow: hidden;
+          white-space: nowrap
+      }
+      .contents_page {
+          width: 100px;
+          float: left;
+          overflow: hidden;
+      }
+      .contents_name:after {
+          content: "_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________";
+      }
+      .nostyle {
+          margin-top: -28px;
+          float: left;
+      }
+      .conf {
+	  font-size:12px;
+      }
+      .conf_name {
+          font-weight: bold;
+      }
+      .conf_name a {
+          text-decoration: none;
+          color: inherit;
+      }
+      .press {
+          display: inline-block;
+          min-width: 10px;
+          padding: 3px 7px;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 1;
+          color: #fff;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          background-color: #777;
+          border-radius: 10px;
+          text-decoration: none;
+      }
+      .press a {
+          text-decoration: none;
+          color: inherit;
+      }
+      #navigation {
+          text-align: center;
+          font-weight: 700;
+          background-color: #0d6a6a;
+          color: white;
+          padding: 6px 10px 6px 10px;
+          font-size: 12pt;
+      }
+      #navigation a {
+          text-decoration: none;
+          color: inherit;
+          padding: 8px 10px 7px 10px;
+      }
+      .navig {
+          box-sizing: content-box;
+          display: inline;
+          float: none;
+          line-height: normal;
+          position: static;
+          z-index: auto;
+      }
+      .navig:hover, #navigation a:hover {
+	  background-color:#0d7a7a;
+      }
+      .infos {
+	  //font-style:italic;
+	  font-size:14px;
+	  margin-bottom:-2px;
+          flex-grow: 1;
+      }
+      .date {
+	  float:left;
+          font-weight: bold;
+      }
+      h2 {
+	  margin-top:-10px;
+	  //    margin-top:-5px;
+	  margin-bottom:1px;
+	  padding-left:5px;
+      }
+      .par, .par_left, .par_right {
+	  background-color:white;
+	  text-align:left;
+	  border-style:none;
+	  border-radius:7px;
+	  border-color:lightgrey;
+	  //border-color:white;
+	  border-width:2px;
+	  padding-top:2px;
+	  padding-bottom:2px;
+	  padding-left:5px;
+	  //padding-bottom:15px;
+      }
+      .par {
+	  width:98%;
+	  line-height:130%;
+      }
+      .par_left, .left {
+	  float:left;
+	  width:47%;
+      }
+      .par_left {
+	  margin-bottom:5px;
+      }
+      .par_right {
+	  float:right;
+	  width:47%;
+      }
+      .ul_xp {
+          padding-left: 20px;
+      }
+      .right {
+	  float:left;
+	  margin-left:15px;
+      }
+      .clear {
+	  clear:both;
+          
+	  margin-top:25px;
+          
+      }
+      .content {
+	  margin:0px;
+	  margin-left:150px;
+      }
+      .content2 {
+	  //margin:5px;
+	  margin-left:110px;
+      }
+      .content3 {
+	  padding-left:4px;
+      }
+      .content4 {
+	  padding-top:3px;
+	  padding-left:3px;
+      }
+      .skills td {
+	  text-align:center;
+	  width:300px;
+	  border-radius:5px;
+	  background-color:#B8FFFF;
+      }
+      .par:hover, .par_left:hover, .par_right:hover {
+	  background-color:#F5F5F5;
+      }
+      body {
+	  background-color:#F5F5F5;
+	  font-family:Arial, Helvetica, sans-serif;
+	  font-size:14px;
+	  //width: 720px;
+	  //background:linear-gradient(#88CCFF, white);
+      }
+      .main_content {
+          width: 50%;
+          // width: 210mm; /* Width of A4 page */
+          margin: 2em auto;
+          //border-radius         : 5px;
+          //box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          border: 1px solid;
+          //box-shadow         : 0px 1px 10px #888;
+          //-o-box-shadow      : 0px 1px 10px #888;
+          //-moz-box-shadow    : 0px 1px 10px #888;
+          //-webkit-box-shadow : 0px 1px 10px #888;
+          padding: 1em 2em;
+          background: white;
+      }
+      ul {
+	  list-style-type:none;
+      }
+      ul ul {
+	  list-style-type:disc;
+      }
+      .bulleted {
+	  list-style-type:disc;
+      }
+      .rws {
+	  padding:3px;
+	  border-radius:5px;
+	  background-color:#B8FFFF;
+	  text-align:center;
+      }
+      .photo {
+	  //float:right;
+	  //margin-top:-5px;
+      }
+      .img_photo {
+	  // height:200px;
+          width: 140px;
+          padding-right: 15px;
+      }
+      .head {
+	  //width:700px;
+          justify-content: center;
+      }
+      .basdepage {display:none;}
+      .renvoi { display:none;}
+      .github {
+	  width:25px;
+      }
+      .icon {
+          width:15px;
+      }
+      .icon_big {
+          width:32px;
+      }
+      .icon:hover {
+	  opacity:0.3;
+      }
+      .title {
+          opacity: 0.6;
+      }
+      .back {
+          margin: 3px;
+      }
+      .overlap {
+          font-weight: normal;
+          color: #808080;
+          font-size: 12px;
+      }
+
+      @media only screen and (max-width: 702px) {
+	  .main_content {
+              width: 90%;
+              margin: 3em auto;
+              padding: 10px;
+	  }
+          .dualsection {
+              margin-right: 5px;
+              margin-left: 5px;
+          }
+          .nostyle {
+              margin-top: -42px;
+              float: left;
+          }
+          .img_photo {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          #navigation {
+              display: none;
+          }
+      }
+      @media print {
+	  .noprint, .icon { display: none; }
+	  .space { height: 70px; }
+          .press {
+              font-weight: normal;
+              font-style: italic;
+              border: 1px solid black;
+          }
+	  .main_content {
+              width: 90%;
+              border: 0px;
+	  }
+	  body {
+	      background-color:white;
+	      font-size:15px;
+	  }
+	  .par {
+	      line-height:130%;
+	  }
+	  h2 {
+	      font-size:25px;
+	      font-weight: bold;
+	  }
+	  .rws, .skills td {
+	      border:solid;
+	      border-width:1px;
+	      background-color:white;
+	  }
+	  a {
+               color:black !important;
+	      text-decoration: none !important;
+	  }
+          #contents_table a {
+              color:black;
+	      text-decoration: none !important;
+          }
+	  .basdepage {
+	      display:block;
+	      font-size:10px;
+	      width:800px;
+	      margin-bottom: 140px;
+	  }
+	  .renvoi {
+	      display:inline;
+	      position: relative;
+	      bottom: 1px;
+	      font-size: .7em;
+	      line-height: .7em;
+	      vertical-align:super;
+	      text-decoration:none;;
+	  }
+	  .bdp {
+	      float:left;
+	      width:370px;
+	  }
+          .ul_xp {
+              padding-left: 5px;
+          }
+      }
+    </style>
+  
+
+  </head>
+  <body>
+    <a href="/" class="noprint nostyle"><div class="back">← Back</div></a>
+    
+    <div class="main_content">
+      <div class="head row d-flex flex-wrap">
+        <div class="photo">
+	  <img class="img_photo nohover" srcset="static/photo_124.webp 124w,
+                                                           static/photo_248.webp 248w,
+                                                           static/photo_496.webp 496w" alt="photo" />
+        </div>
+        <div class="infos">
+          
+          <div class="row flex-nowrap dualsection">
+            <div class="col-sm-6">
+              
+            </div>
+            <div class="col-sm-6">
+              
+            </div>
+          </div>
+          <span class="lead-title">
+<h1>Célestin Matte</h1>
+
+<p><h2>Ex-Privacy researcher, Wi-Fi & Web tracking</h2></p>
+</span>
+
+<span class="noprint">
+<p>I used to work on Wi-Fi and web tracking.<br />
+
+<p>I am no longer working in research. See my <a href="/CV/">DevOps profile<a>.</p>
+</span>
+        </div>
+      </div>
+      <br />
+<div id="navigation" class="noprint">
+  <a href="#publications"><div class="navig">Publications</div></a>
+  <a href="#software"><div class="navig">Software</div></a>
+  <a href="#talks"><div class="navig">Talks</div></a>
+  <a href="#conferences"><div class="navig">Service</div></a>
+  <a href="#dissemination"><div class="navig">Dissemination</div></a>
+  <a href="#industry"><div class="navig">Industry Impact</div></a>
+  <a href="#teaching"><div class="navig">Teaching</div></a>
+  <a href="#contact"><div class="navig">Contact</div></a>
+</div>
+      
+
+      
+      
+      
+
+      <div id="news" class="noprint">
+  <div class="clear">
+    <h2>Latest News</h2>
+  </div>
+  <ul class="par">
+    <li>
+      <ul class="par">
+        <li><span class="date">Jun 2021</span>: I'm now working as a freelance <a href="/CV/">DevOps</a> in the private sector.</li>
+        <li><span class="date">Dec 2020</span>: I'm happy to release the <a href="https://vendorlistexplorer.ploudseeker.com">Vendorlist Explorer</a>!</li>
+        <li><span class="date">Dec 2020</span>: Video and slides for both APF and IEEE S&amp;P presentations on cookie banners are available (see links in the "publications" section)</li>
+        <li><span class="date">Sep 2020</span>: Our legal-technical 75-page paper on requirements for compliant cookie banners is accepted to an international journal of law:"Technology and Regulation (TechReg)"!</li>
+        <li><span class="date">May 2020</span>: Our paper on purposes in IAB Europe's TCF is accepted at APF'20!</li>
+        <li><span class="date">Apr 2020</span>: The code of Cookinspect, our crawler used for our work on cookie banners, is <a href="https://github.com/Perdu/Cookinspect">on Github</a>.</li>
+        <li><span class="date">Apr 2020</span>: Big <a href="https://github.com/Perdu/Cookie-Glasses/blob/master/changelog.txt">update</a> on Cookie Glasses, which is now also available <a href="https://addons.mozilla.org/fr/firefox/addon/cookie-glasses/">on Firefox</a>.</li>
+        <li><span class="date">Mar 2020</span>: My postdoc terminated. I'm currently looking at associate professor (MCF) positions in France.</li>
+        <li><span class="date">Feb 2020</span>: We have written a <a href="https://hal.inria.fr/hal-02490531">response</a> to the CNIL's recommendations project on cookie banners.
+        <li><span class="date">Feb 2020</span>: Our paper on cookie banner is accepted at IEEE S&P'20!</li>
+        <li><span class="date">Jan 2020</span>: Our Cookie Glasses browser extension is available on <a href="https://chrome.google.com/webstore/detail/cookie-glasses/gncnjghkclkhpkfhghcbobednpchjifk">Chrome's store</a>.</li>
+        <li><span class="date">Nov 2019</span>: We released the <a href="https://arxiv.org/abs/1911.09964">preprint</a> of our work on cookie banners. See the <a href="https://twitter.com/nataliabielova/status/1199658816134164482">Twitter thread</a>.</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+      <div class="clear" id="publications">
+    <h2>Publications</h2>
+    <ul class="par">
+      Conference publications:
+      <li>
+	<ul class="bulleted">
+	  <li>
+	    Célestin Matte, Cristiana Santos, Nataliia Bielova<br />
+	    <a href="https://hal.inria.fr/hal-02566891"><i>Purposes in IAB Europe's TCF: which legal basis and how are they used by advertisers?</i></a> <a href="https://hal.inria.fr/hal-02566891/document"><img src="static/pdf_32.png" class="icon" /></a> <a href="https://cmatte.me/docs/slides_APF.pdf"><img src="static/slides.png" class="icon" /></a> <a href="https://youtu.be/pTMKmRp4pSI"><img src="static/video_32.png" class="icon" /></a><br />
+            <a href="https://twitter.com/nataliabielova/status/1261302416147873795">Summary</a> <br />
+	    <span class="conf"><span class="conf_name"><a href="https://privacyforum.eu/">APF'20</a></span> (Annual Privacy Forum)</span><br />
+            <div class="abstract">
+              The General Data Protection Regulation (GDPR), Data Protection Authorities (DPAs) and the European Data Protection Board (EDPB) discuss purposes for data processing and the legal bases upon which data controllers can rely on: either "consent" or "legitimate in-terests". We study the purposes defined in IAB Europe's Transparency and Consent Framework (TCF) and their usage by advertisers. We analyze the purposes with regard to the legal requirements for defining them lawfully, and suggest that several of them might not be specific or explicit enough to be compliant. Arguably, a large portion thereof requires consent, even though the TCF allows advertisers to declare them under the legitimate interests basis. Finally, we measure the declaration of purposes by all advertisers registered in the TCF versions 1.1. and 2.0 and show that hundreds of them do not operate under a legal basis that could be considered compliant under the GDPR.
+            </div>
+	  </li>
+	  <li>
+	    Célestin Matte, Nataliia Bielova, Cristiana Santos<br />
+	    <a href="https://arxiv.org/abs/1911.09964"><i>Do Cookie Banners Respect my Choice? Measuring Legal Compliance of Banners from IAB Europe's Transparency and Consent Framework</i></a> <a href="https://arxiv.org/pdf/1911.09964.pdf"><img src="static/pdf_32.png" class="icon" /></a> <a href="https://cmatte.me/docs/slides_ieeesp20.pdf"><img src="static/slides.png" class="icon" /></a> <a href="https://www.youtube.com/watch?v=q8NCB9XcHyw"><img src="static/video_32.png" class="icon" /></a><br />
+            <a href="https://www-sop.inria.fr/members/Nataliia.Bielova/cookiebanners/">Website</a>, <a href="https://github.com/Perdu/Cookie-Glasses">Browser extension</a><br />
+	    <span class="conf"><span class="conf_name"><a href="https://www.ieee-security.org/TC/SP2020">IEEE S&amp;P'20</a></span> (IEEE Symposium on Security and Privacy, A*)</span><br />
+            Press: <span class="press"><a href="https://www.techdirt.com/articles/20191210/07425443541/guess-what-many-cookie-banners-ignore-your-wishes-so-max-schrems-goes-gdpr-attack-again.shtml">Techdirt</a></span> <span class="press"><a href="https://www.nextinpact.com/news/108495-cookies-refuses-mais-installes-cdiscount-allocine-et-vanity-fair-attaques-devant-cnil.htm">Next INpact</a></span> <span class="press"><a href="https://www.mediapart.fr/journal/france/190220/donnees-personnelles-les-cookies-resistent-encore">Mediapart</a></span> <span class="press"><a href="https://www.lemonde.fr/pixels/article/2019/12/10/vie-privee-cdiscount-allocine-et-vanity-fair-vises-par-une-plainte-d-une-ong_6022380_4408996.html">Le Monde</a></span> <span class="press"><a href="https://linc.cnil.fr/mecanismes-et-recueil-du-consentement">CNIL's blog</a></span>
+            <div class="abstract">As a result of the GDPR and the ePrivacy Directive, European users encounter cookie banners on almost every website. Many of such banners are implemented by Consent Management Providers (CMPs), who respect the IAB Europe's Transparency and Consent Framework (TCF). Via cookie banners, CMPs collect and disseminate user consent to third parties. In this work, we systematically study IAB Europe's TCF and analyze consent stored behind the user interface of TCF cookie banners. We analyze the GDPR and the ePrivacy Directive to identify legal violations in implementations of cookie banners based on the storage of consent and detect such violations by crawling 22 949 European websites. With two automatic and semi-automatic crawl campaigns, we detect violations, and we find that: 141 websites register positive consent even if the user has not made their choice; 236 websites nudge the users towards accepting consent by pre-selecting options; and 27 websites store a positive consent even if the user has explicitly opted out. Performing extensive tests on 560 websites, we find at least one violation in 54% of them. Finally, we provide a browser extension to facilitate manual detection of violations for regular users and Data Protection Authorities.</div>
+	  </li>
+	  <li>
+	    Célestin Matte, Mathieu Cunche, <i>et al.</i><br />
+	    <a href="https://hal.archives-ouvertes.fr/hal-01330476/"><i>Defeating MAC Address Randomization Through Timing Attacks</i></a> <a href="https://lirias.kuleuven.be/bitstream/123456789/547642/1/wisec2016.pdf"><img src="static/pdf_32.png" class="icon" /></a> <a href="https://cmatte.me/docs/slides_wisec16.pdf"><img src="static/slides.png" class="icon" /></a><br />
+	    <span class="conf"><span class="conf_name"><a href="https://www.sigsac.org/wisec/WiSec2016">WiSec'16</a></span> (ACM Conference on Security and Privacy in Wireless and Mobile Networks)</span>
+            <div class="abstract">
+              MAC address randomization is a common privacy protection measure deployed in major operating systems today. It is used to prevent user-tracking with probe requests that are transmitted during IEEE 802.11 network scans. We present an attack to defeat MAC address randomization through observation of the timings of the network scans with an off-the-shelf Wi-Fi interface. This attack relies on a signature based on inter-frame arrival times of probe requests, which is used to group together frames coming from the same device although they use distinct MAC addresses. We propose several distance metrics based on timing and use them together with an incremental learning algorithm in order to group frames. We show that these signatures are consistent over time and can be used as a pseudo-identifier to track devices. Our framework is able to correctly group frames using different MAC addresses but belonging to the same device in up to 75% of the cases. These results show that the timing of 802.11 probe frames can be abused to track individual devices and that address randomization alone is not always enough to protect users against tracking.
+            </div>
+	  </li>
+	  <li>
+	    Célestin Matte, Mathieu Cunche<br />
+	    <a href="https://hal.inria.fr/hal-01330479/"><i>DEMO: Panoptiphone: How Unique is Your Wi-Fi Device?</i></a> <a href="https://hal.inria.fr/hal-01330479/document"><img src="static/pdf_32.png" class="icon" /></a><br />
+	    <span class="conf"><span class="conf_name"><a href="https://www.sigsac.org/wisec/WiSec2016">WiSec'16</a></span> (ACM Conference on Security and Privacy in Wireless and Mobile Networks)</span>
+	  </li>
+	  <li>
+	    Mathy Vanhoef, Célestin Matte, Mathieu Cunche, <i>et al.</i><br />
+	    <a href="https://hal.archives-ouvertes.fr/hal-01282900"><i>Why MAC Address Randomization is not Enough: An Analysis of Wi-Fi Network Discovery Mechanisms</i></a> <a href="http://papers.mathyvanhoef.com/asiaccs2016.pdf"><img src="static/pdf_32.png" class="icon" /></a> <a href="https://cmatte.me/docs/slides_asiaccs16.pdf"><img src="static/slides.png" class="icon" /></a><br />
+	    <span class="conf"><span class="conf_name"><a href="http://meeting.xidian.edu.cn/conference/AsiaCCS2016/papers.html">AsiaCCS'16</a></span> (ACM ASIA Conference on Computer and Communications Security, B)</span>
+            <div class="abstract">
+              We present several novel techniques to track (unassociated) mobile devices by abusing features of the Wi-Fi standard. This shows that using random MAC addresses, on its own, does not guarantee privacy. First, we show that information elements in probe requests can be used to fingerprint devices. We then combine these fingerprints with incremental sequence numbers, to create a tracking algorithm that does not rely on unique identifiers such as MAC addresses. Based on real-world datasets, we demonstrate that our algorithm can correctly track as much as 50% of devices for at least 20 minutes. We also show that commodity Wi-Fi devices use predictable scrambler seeds. These can be used to improve the performance of our tracking algorithm. Finally, we present two attacks that reveal the real MAC address of a device, even if MAC address randomization is used. In the first one, we create fake hotspots to induce clients to connect using their real MAC address. The second technique relies on the new 802.11u standard, commonly referred to as Hotspot 2.0, where we show that Linux and Windows send Access Network Query Protocol (ANQP) requests using their real MAC address.
+            </div>
+	  </li>
+	  <li>
+	    Célestin Matte, Jagdish Prasard Achara, Mathieu Cunche<br />
+	    <a href="https://hal.inria.fr/hal-01176842"><i>Device-to-Identity Linking Attack Using Targeted Wi-Fi Geolocation Spoofing</i></a> <a href="https://hal.inria.fr/hal-01176842/document"><img src="static/pdf_32.png" class="icon" /></a> <a href="https://cmatte.me/docs/slides_wisec15.pdf"><img src="static/slides.png" class="icon" /></a><br />
+	    <span class="conf"><span class="conf_name"><a href="https://www.sigsac.org/wisec/WiSec2015">WiSec'15</a></span> (ACM Conference on Security and Privacy in Wireless and Mobile Networks) (+ travel grant obtained)</span>
+            <div class="abstract">
+              Today, almost all mobile devices come equipped with Wi-Fi technology. Therefore, it is essential to thoroughly study the privacy risks associated with this technology. Recent works have shown that some Personally Identifiable Information (PII) can be obtained from the radio signals emitted by Wi-Fi equipped devices. However, most of the times, the identity of the subject of those pieces of information remains unknown and the Wi-Fi MAC address of the device is the only available identifier. In this paper, we show that it is possible for an attacker to get the identity of the subject. The attack presented in this paper leverages the geolocation information published on some geotagged services, such as Twitter, and exploits the fact that geolocation information obtained through Wi-Fi-based Positioning System (WPS) can be easily manipulated. We show that geolocation manipulation can be targeted to a single device, and in most cases, it is not necessary to jam real Wi-Fi access points (APs) to mount a successful attack on WPS.
+            </div>
+	  </li>
+        </ul>
+      </li>
+      Journals:
+      <li>
+	<ul class="bulleted">
+	  <li>
+	    Cristiana Santos, Nataliia Bielova, Célestin Matte<br />
+	    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4206054"><i>Are cookie banners indeed compliant with the law? Deciphering EU legal requirements on consent and technical means to verify compliance of cookie banners</i></a> <a href="https://techreg.org/index.php/techreg/article/view/43/25"><img src="static/pdf_32.png" class="icon" /></a><br />
+	    <span class="conf"><span class="conf_name"><a href="https://techreg.org/index.php/techreg">TechReg</a></span> (Technology and Regulation) (2020)</span>
+	  </li>
+        </ul>
+      </li>
+      Tech report:
+      <li>
+	<ul class="bulleted">
+	  <li>
+	    Célestin Matte, Mathieu Cunche, Vincent Toubiana<br />
+	    <a href="https://hal.inria.fr/hal-01575519v2"><i>Does disabling Wi-Fi prevent my Android phone from sending Wi-Fi frames?</i></a> (2017) <a href="https://hal.inria.fr/hal-01575519v2/document"><img src="static/pdf_32.png" class="icon" /></a><br />
+            Press:
+            <span class="press"><a href="https://linc.cnil.fr/fr/desactiver-le-wi-fi-android-ne-nous-preserve-pas-du-tracage">CNIL's blog</a></span>
+            <span class="press"><a href="https://www.01net.com/actualites/sur-android-le-wi-fi-peut-vous-tracer-meme-s-il-est-desactive-1245292.html">01net</a></span>
+            <span class="press"><a href="https://www.commentcamarche.net/news/5870290-meme-desactive-le-wi-fi-reste-tracable">Comment ça marche</a></span>
+            <span class="press"><a href="https://www.sciencesetavenir.fr/high-tech/google-android-detecte-en-permanence-la-localisation-du-telephone_116061">Science et avenir</a></span>
+            <span class="press"><a href="https://www.frandroid.com/android/mises-a-jour-android/487194_le-nfc-pourrait-bientot-etre-utilise-meme-quand-vous-le-desactivez">Frandroid</a></span>
+            <span class="press"><a href="https://www.quechoisir.org/actualite-smartphones-android-meme-une-fois-le-wi-fi-desactive-vous-etes-piste-n46076/">UFC Que Choisir</a></span>
+            <span class="press"><a href="https://www.zdnet.fr/actualites/android-desactiver-le-wi-fi-n-empeche-pas-d-etre-espionne-39856640.htm">ZDNet</a></span>
+            <span class="press"><a href="https://news.ycombinator.com/item?id=15141077">Hacker News</a></span>
+            <div class="abstract">
+              No. For Android, we show that another option, called "Always allow scanning", when activated, makes a device send Wi-Fi frames which can be used to track this device, even if the Wi-Fi switch is off. This option is not clearly described in all Android versions, and sometimes very hard to find. Besides, the Google Maps application prompts the user to activate this option. Similarly, for iOS 11, the Wi-Fi switch in the control center does not prevent Wi-Fi frames from being emitted by some services.
+            </div>
+	  </li>
+        </ul>
+      </li>Thesis:
+      <ul class="bulleted">
+	<li>
+	  <a href="https://hal.inria.fr/tel-01659783v1">Wi-Fi Tracking: Fingerprinting Attacks and Countermeasures</a> (2017) <a href="https://hal.inria.fr/tel-01659783v1/document"><img src="static/pdf_32.png" class="icon" /></a> <a href="https://cmatte.me/docs/slides_these.pdf"><img src="static/slides.png" class="icon" /></a>
+          <div class="abstract">
+            The recent spread of everyday-carried Wi-Fi-enabled devices (smartphones, tablets and wearable devices) comes with a privacy threat to their owner, and to society as a whole. These devices continuously emit signals which can be captured by a passive attacker using cheap hardware and basic knowledge. These signals contain a unique identifier, called the MAC address. To mitigate the threat, device vendors are currently deploying a countermeasure on new devices: MAC address randomization. Unfortunately, we show that this mitigation, in its current state, is insufficient to prevent tracking. To do so, we introduce several attacks, based on the content and the timing of emitted signals. In complement, we study implementations of MAC address randomization in some recent devices, and find a number of shortcomings limiting the efficiency of these implementations at preventing device tracking. At the same time, we perform two real-world studies. The first one considers the development of actors exploiting this issue to install Wi-Fi tracking systems. We list some real-world installations and discuss their various aspects, including regulation, privacy implications, consent and public acceptance. The second one deals with the spread of MAC address randomization in the devices population. Finally, we present two tools: an experimental Wi-Fi tracking system for testing and public awareness raising purpose, and a tool estimating the uniqueness of a device based on the content of its emitted signals even if the identifier is randomized.
+          </div>
+	</li>
+      </ul>
+    </ul>
+      
+      
+      <div id="software">
+  <div class="clear">
+    <h2>Software <a href="https://github.com/Perdu/"><img src="static/GitHub-Mark-32px.png" class="github icon noprint"/></a></h2>
+  </div>
+  <ul class="par">
+    <li>
+      <ul class="par">
+
+	<li><a href="https://github.com/Perdu/Cookie-Glasses">Cookie-Glasses</a> A browser extension showing consent registered by cookie banners of IAB Europe's Transparency & Consent Framework <span class="press">JavaScript</span> <span class="press">WebExtensions</span></li>
+	<li><a href="https://github.com/Perdu/vendorlistexplorer">Vendorlist explorer</a> Web application that extracts information from the vendorlist of IAB Europe Transparency & Consent Framework and makes this information human-readable. <span class="press">Python</span> <span class="press">Flask</span> <span class="press">SQLAlchemy</span></li>
+        <li><a href="https://github.com/Perdu/Cookinspect">Cookinspect</a> Selenium-based crawler used to find violations in cookie banners of IAB Europe's Transparency & Consent Framework <span class="press">Python</span> <span class="press">Selenium</span> <span class="press">WebExtensions</span> <span class="press">SQLAlchemy</span></li>
+
+	<li><a href="https://github.com/Perdu/wombat">Wombat</a> A Wi-Fi tracking system for testing and demonstrational purpose <span class="press">Python</span> <span class="press">Ansible</span> <span class="press">Arch Linux</span></li>
+
+
+	<li><a href="https://github.com/Perdu/panoptiphone">Panoptiphone</a> A tool to show the identifying information that can be found in the frames broadcast by a Wi-Fi-enabled device <span class="press">Python</span> <span class="press">Wireshark</span></li>
+
+      </ul>
+    </li>
+  </ul>
+</div>
+      
+      <div id="talks">
+  <div class="clear">
+    <h2>Talks</h2>
+  </div>
+  <ul class="par">
+    <li>
+      Invited talks:
+      <ul>
+        <li>03-2021: at Utrecht University, Master's Programme Law & Technology in Europe on cookie banners and Wi-Fi tracking</li>
+<!--- Capita Selecta Law and Technology: Data Protection II: Tracking Technologies & ePrivacy
+Master's Programme Law & Technology in Europe
+Faculty of Law, Economics, Governance and Organization
+Utrecht University
+-->
+	<li>01-2020: at Brave on cookie banners</li>
+	<li>09-2019: at CNIL on cookie banners</li>
+      </ul>
+      Workshops:
+      <ul>
+        <li>
+          <span class="conf"><a href="https://project.inria.fr/apvp2019/programme/">APVP'19</a></span>: Do Cookie Banners Respect my Choice? Measuring Legal Compliance of Banners from IAB Europe's Transparency and Consent Framework</li>
+	<li>
+	  <span class="conf"><a href="https://apvp2017.sciencesconf.org/">APVP'17</a></span>: <a href="https://hal.inria.fr/hal-01679007/"><i>Wombat: An experimental Wi-Fi tracking system</i></a> <a href="https://hal.inria.fr/hal-01679007/document"><img src="static/pdf_32.png" class="icon" /></a> <a href="https://cmatte.me/docs/slides_apvp17.pdf"><img src="static/slides.png" class="icon" /></a><br />
+	</li>
+        <li>
+          <span class="conf"><a href="http://phd-day.citi-lab.fr/2016/index.html">CITI lab PhD Day'16</a>, <a href="https://apvp2016.sciencesconf.org/resource/page/id/2">APVP'16</a></span>: Why MAC Address Randomization is not Enough: An Analysis of Wi-Fi Network Discovery Mechanisms
+        </li>
+        <li>
+          <span class="conf"><a href="https://bit.ly/stda2014">STDA'14</a>, <a href="http://apvp14.orange-labs.fr/?page_id=2">APVP'14</a></span>: Device-to-Identity Linking Attack Using Targeted Wi-Fi Geolocation Spoofing
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+      <div id="conferences">
+  <div class="clear">
+    <h2>Community Service</h2>
+  </div>
+  <ul class="par">
+    <li>
+      <ul class="par">
+	<li>Organization Committee: <a href="http://grehack.fr/2015/info">GreHack'15</a></li>
+	<li>Program Committee: <a href="https://project.inria.fr/apvp2019/organisation/">APVP'19</a>, <a href="https://apvp2020.sciencesconf.org/">APVP'20</a>, <a href="https://wisec2020.ins.jku.at/organization/">WiSec'20</a></li>
+	<li>(Sub-)Reviewer: CoNext2015StudentWorkshop, TrustCom'16, EuroS&P'19, TheWeb'20, The Computer Journal, PETS'20, PETS'21, <a href="https://publons.com/researcher/4082188/celestin-matte/">IEEE TWC</a></li>
+        <li>Member of the <i>Conseil de laboratoire</i>:</li>
+        <ul>
+          <li>CITI lab, 2015-2016 (one year)</li>
+          <li>Inria Sophia, 2019-2020 (7 months)</li>
+        </ul>
+      </ul>
+    </li>
+  </ul>
+</div>
+      <div class="clear" id="dissemination">
+  <h2>Dissemination</h2>
+  <ul class="par">
+    <li>
+      Installation of our <a href="https://github.com/Perdu/wombat"><i>Wi-Fi tracking demonstration prototype</i></a>:
+      <ul class="bulleted">
+	<li>
+	  2017 - 2018: <i>Cité des Sciences et de l'Industrie</i> (Paris) for the <a href="https://www.cite-sciences.fr/fr/ressources/expositions-passees/terra-data/lexposition">Terra Data exhibition</a>.
+	</li>
+	<li>
+	  2018: CITI laboratory showroom
+	</li>
+	<li>
+	  2018: CNIL Linc showroom
+	</li>
+      </ul>
+    </li>
+    <li>
+      Talks:
+      <ul class="bulleted">
+	<li>
+	  Pas Sage en Seine'19: <a href="https://programme.passageenseine.fr/">Traçage Wi-Fi et Bluetooth</a> <a href="https://cmatte.me/docs/slides_PSES19.pdf"><img src="static/slides.png" class="icon" /></a><br />
+	</li>
+      </ul>
+      General press publications:&nbsp;<ul class="bulleted">
+	<li>
+	  Célestin Matte<br />
+	  <a href="https://connect.ed-diamond.com/GNU-Linux-Magazine/GLMFHS-099/Tracage-Wi-Fi-qu-en-est-il-en-pratique"><i>Traçage Wi-Fi : qu’en est-il en pratique ?</i></a><br />
+	  <span class="conf">GNU/Linux Magazine HS n°99 (2018-11)</span>
+	</li>
+	<li>
+	  Célestin Matte<br />
+	  <a href="https://bit.ly/misc96"><i>MAC Address Randomization : tour d’horizon</i></a><br />
+	  <span class="conf">MISC n°96 (2018-03)</span>
+	</li>
+	<li>
+	  Célestin Matte<br />
+	  <a href="https://bit.ly/glmf202"><i>Transfert de style : et si Van Gogh peignait Tux ?</i></a> <br />
+	  <span class="conf">GNU/Linux Magazine n°202 (2017-03) (cover article)</span>
+	</li>
+	<li>
+	  Célestin Matte, Mathieu Cunche<br />
+	  <a href="https://bit.ly/glmfhs84"><i>Traçage Wi-Fi, applications et contre-mesures</i></a><br />
+	  <span class="conf">GNU/Linux Magazine HS n°84 (2016-05)</span>
+	</li>
+	<li>
+	  Célestin Matte<br />
+	  <a href="https://bit.ly/misc81"><i>Fingerprinting de smartphones : votre téléphone est-il traçable ?</i></a><br />
+	  <span class="conf">MISC n°81 (2015-09)</span>
+	</li>
+      </ul></li>
+  </ul>
+</div>
+      <div class="clear" id="industry">
+  <h2>Industry impact</h2>
+  <ul class="par">
+    <li>
+      Google cites our work on MAC address randomization for related <a href="https://android-developers.googleblog.com/2017/04/changes-to-device-identifiers-in.html">changes in Android</a>.<br />
+      Our work on MAC address randomization was <a href="https://mentor.ieee.org/802.11/documents?is_dcn=privacy">discussed at an IEEE session</a>.<br />
+      A <a href="https://noyb.eu/say-no-to-cookies-yet-see-your-privacy-crumble">complaint by NOYB to the CNIL</a> followed our work on cookie banners. It was relayed by
+      <a href="https://www.lemonde.fr/pixels/article/2019/12/10/vie-privee-cdiscount-allocine-et-vanity-fair-vises-par-une-plainte-d-une-ong_6022380_4408996.html">Le Monde</a>,
+      <a href="https://www.lefigaro.fr/secteur/high-tech/allocine-cdiscount-et-vanity-fair-accuses-de-depot-illegal-de-cookies-20191211">Le Figaro</a>,
+      <a href="https://www.lesechos.fr/tech-medias/medias/ces-entreprises-qui-vous-tracent-meme-si-vous-refusez-leurs-cookies-1155052">Les Échos</a>,
+      <a href="https://www.europe1.fr/technologies/trois-grands-sites-francais-et-leurs-partenaires-accuses-dignorer-le-refus-des-cookies-3936626">Europe1</a>,
+      <a href="https://www.bfmtv.com/tech/sur-ces-sites-francais-refuser-les-cookies-ne-suffit-pas-a-ne-plus-etre-trace-1821554.html">BFM TV</a>...
+    </li>
+  </ul>
+</div>
+
+      
+      
+      
+      
+      
+      
+
+      
+
+      
+      
+      
+
+      <div id="teaching">
+  <div class="clear">
+    <h2>Teaching</h2>
+  </div>
+  <ul class="par">
+    <li>
+      <ul class="par">
+	<li>INSA Lyon, <a href="http://planete.insa-lyon.fr/scolpeda/f/ects?id=31099&amp;_lang=fr">Algorithmics and programming 1</a> EN, L1 (2016 - 2017) 64 hours, 1.5 groups with ~25 students per group<br />
+          Teaching of basis programming in Java, plus a Libreoffice introduction module.
+        </li>
+	<li>INSA Lyon, <a href="https://planete.insa-lyon.fr/scolpeda/f/ects?id=30011&amp;_lang=fr">Algorithmique et programmation 1</a> FR, L1 (2014 - 2016) 2 * 64 hours, 1.5 groups with ~25 students per group</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+      <div class="clear" id="contact">
+  <h2>Contact</h2>
+  <ul class="par">
+    <li>
+      contact@cmatte.me (<a href="gpg">GPG</a>: 0xCB6A8BD6 &#8211; 6430 156C 58FF 95B8 7EA9 0F30 A1A6 28FE CB6A 8BD6)<br/>
+      Twitter: <a href="https://twitter.com/CelestinMatte">@CelestinMatte</a>
+    </li>
+  </ul>
+</div>
+      
+    </div>
+  </body>
+</html>

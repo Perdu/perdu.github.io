@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Célestin Matte's CV">
+    <title>CV Célestin Matte</title>
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+    
+  
+        <style type="text/css">
+      a {
+	  color:light-red;
+	  text-decoration: none;
+      }
+      .abstract {
+          border: 1px solid black;
+          padding: 3px;
+          margin: 5px;
+          margin-left: 10px;
+          
+          display: none;
+          
+      }
+      #contents_table {
+          width: 900px;
+      }
+      .contents_name {
+          width: 800px;
+          float: left;
+          overflow: hidden;
+          white-space: nowrap
+      }
+      .contents_page {
+          width: 100px;
+          float: left;
+          overflow: hidden;
+      }
+      .contents_name:after {
+          content: "_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________";
+      }
+      .nostyle {
+          margin-top: -28px;
+          float: left;
+      }
+      .conf {
+	  font-size:12px;
+      }
+      .conf_name {
+          font-weight: bold;
+      }
+      .conf_name a {
+          text-decoration: none;
+          color: inherit;
+      }
+      .press {
+          display: inline-block;
+          min-width: 10px;
+          padding: 3px 7px;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 1;
+          color: #fff;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          background-color: #777;
+          border-radius: 10px;
+          text-decoration: none;
+      }
+      .press a {
+          text-decoration: none;
+          color: inherit;
+      }
+      #navigation {
+          text-align: center;
+          font-weight: 700;
+          background-color: #0d6a6a;
+          color: white;
+          padding: 6px 10px 6px 10px;
+          font-size: 12pt;
+      }
+      #navigation a {
+          text-decoration: none;
+          color: inherit;
+          padding: 8px 10px 7px 10px;
+      }
+      .navig {
+          box-sizing: content-box;
+          display: inline;
+          float: none;
+          line-height: normal;
+          position: static;
+          z-index: auto;
+      }
+      .navig:hover, #navigation a:hover {
+	  background-color:#0d7a7a;
+      }
+      .infos {
+	  //font-style:italic;
+	  font-size:14px;
+	  margin-bottom:-2px;
+          flex-grow: 1;
+      }
+      .date {
+	  float:left;
+          font-weight: bold;
+      }
+      h2 {
+	  margin-top:-10px;
+	  //    margin-top:-5px;
+	  margin-bottom:1px;
+	  padding-left:5px;
+      }
+      .par, .par_left, .par_right {
+	  background-color:white;
+	  text-align:left;
+	  border-style:none;
+	  border-radius:7px;
+	  border-color:lightgrey;
+	  //border-color:white;
+	  border-width:2px;
+	  padding-top:2px;
+	  padding-bottom:2px;
+	  padding-left:5px;
+	  //padding-bottom:15px;
+      }
+      .par {
+	  width:98%;
+	  line-height:130%;
+      }
+      .par_left, .left {
+	  float:left;
+	  width:47%;
+      }
+      .par_left {
+	  margin-bottom:5px;
+      }
+      .par_right {
+	  float:right;
+	  width:47%;
+      }
+      .ul_xp {
+          padding-left: 20px;
+      }
+      .right {
+	  float:left;
+	  margin-left:15px;
+      }
+      .clear {
+	  clear:both;
+          
+	  margin-top:25px;
+          
+      }
+      .content {
+	  margin:0px;
+	  margin-left:150px;
+      }
+      .content2 {
+	  //margin:5px;
+	  margin-left:110px;
+      }
+      .content3 {
+	  padding-left:4px;
+      }
+      .content4 {
+	  padding-top:3px;
+	  padding-left:3px;
+      }
+      .skills td {
+	  text-align:center;
+	  width:300px;
+	  border-radius:5px;
+	  background-color:#B8FFFF;
+      }
+      .par:hover, .par_left:hover, .par_right:hover {
+	  background-color:#F5F5F5;
+      }
+      body {
+	  background-color:#F5F5F5;
+	  font-family:Arial, Helvetica, sans-serif;
+	  font-size:14px;
+	  //width: 720px;
+	  //background:linear-gradient(#88CCFF, white);
+      }
+      .main_content {
+          width: 50%;
+          // width: 210mm; /* Width of A4 page */
+          margin: 2em auto;
+          //border-radius         : 5px;
+          //box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          border: 1px solid;
+          //box-shadow         : 0px 1px 10px #888;
+          //-o-box-shadow      : 0px 1px 10px #888;
+          //-moz-box-shadow    : 0px 1px 10px #888;
+          //-webkit-box-shadow : 0px 1px 10px #888;
+          padding: 1em 2em;
+          background: white;
+      }
+      ul {
+	  list-style-type:none;
+      }
+      ul ul {
+	  list-style-type:disc;
+      }
+      .bulleted {
+	  list-style-type:disc;
+      }
+      .rws {
+	  padding:3px;
+	  border-radius:5px;
+	  background-color:#B8FFFF;
+	  text-align:center;
+      }
+      .photo {
+	  //float:right;
+	  //margin-top:-5px;
+      }
+      .img_photo {
+	  // height:200px;
+          width: 140px;
+          padding-right: 15px;
+      }
+      .head {
+	  //width:700px;
+          justify-content: center;
+      }
+      .basdepage {display:none;}
+      .renvoi { display:none;}
+      .github {
+	  width:25px;
+      }
+      .icon {
+          width:15px;
+      }
+      .icon_big {
+          width:32px;
+      }
+      .icon:hover {
+	  opacity:0.3;
+      }
+      .title {
+          opacity: 0.6;
+      }
+      .back {
+          margin: 3px;
+      }
+      .overlap {
+          font-weight: normal;
+          color: #808080;
+          font-size: 12px;
+      }
+
+      @media only screen and (max-width: 702px) {
+	  .main_content {
+              width: 90%;
+              margin: 3em auto;
+              padding: 10px;
+	  }
+          .dualsection {
+              margin-right: 5px;
+              margin-left: 5px;
+          }
+          .nostyle {
+              margin-top: -42px;
+              float: left;
+          }
+          .img_photo {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          #navigation {
+              display: none;
+          }
+      }
+      @media print {
+	  .noprint, .icon { display: none; }
+	  .space { height: 70px; }
+          .press {
+              font-weight: normal;
+              font-style: italic;
+              border: 1px solid black;
+          }
+	  .main_content {
+              width: 90%;
+              border: 0px;
+	  }
+	  body {
+	      background-color:white;
+	      font-size:15px;
+	  }
+	  .par {
+	      line-height:130%;
+	  }
+	  h2 {
+	      font-size:25px;
+	      font-weight: bold;
+	  }
+	  .rws, .skills td {
+	      border:solid;
+	      border-width:1px;
+	      background-color:white;
+	  }
+	  a {
+               color:black !important;
+	      text-decoration: none !important;
+	  }
+          #contents_table a {
+              color:black;
+	      text-decoration: none !important;
+          }
+	  .basdepage {
+	      display:block;
+	      font-size:10px;
+	      width:800px;
+	      margin-bottom: 140px;
+	  }
+	  .renvoi {
+	      display:inline;
+	      position: relative;
+	      bottom: 1px;
+	      font-size: .7em;
+	      line-height: .7em;
+	      vertical-align:super;
+	      text-decoration:none;;
+	  }
+	  .bdp {
+	      float:left;
+	      width:370px;
+	  }
+          .ul_xp {
+              padding-left: 5px;
+          }
+      }
+    </style>
+  
+
+  </head>
+  <body>
+    <a href="/" class="noprint nostyle"><div class="back">← Back</div></a>
+    
+  
+    <div class="pdf_link noprint">
+  <a href="CV.pdf"><img src="static/pdf.png" class="icon_big" /></a>
+</div>
+  
+
+    <div class="main_content">
+      <div class="head row d-flex flex-wrap">
+        <div class="photo">
+	  <img class="img_photo nohover" srcset="static/photo_124.webp 124w,
+                                                           static/photo_248.webp 248w,
+                                                           static/photo_496.webp 496w" alt="photo" />
+        </div>
+        <div class="infos">
+          
+  
+    <span class="lead-title">
+<h1>Célestin Matte</h1><p><h2>DevOps System Administrator</h2></p></span>
+  
+
+          <div class="row flex-nowrap dualsection">
+            <div class="col-sm-6">
+              
+  
+    	<a href="mailto:contact@cmatte.me">contact@cmatte.me</a><br/>
+	<a href="https://cmatte.me">https://cmatte.me</a><br/>33 years old<br/>
+        Strasbourg, France
+  
+
+            </div>
+            <div class="col-sm-6">
+              <div class="strengths">
+  Strengths:<br />
+  <ul>
+    <li>Autonomous</li>
+    <li>International</li>
+    <li>Analytical thinker</li>
+  </ul>
+</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+
+      <div class="clear">
+    <h2>Education</h2>
+</div>
+    <ul class="par section education">
+      <li>
+	<div class="date">2017</div>
+	<div class="content2">
+	  <b>PhD</b> in Computer Science, <a href="https://www.insa-lyon.fr/">INSA Lyon</a>, <a href="https://www.universite-lyon.fr/version-anglaise/">University of Lyon</a>, France.
+	</div>
+      </li>
+      <li>
+	<div class="date">2014</div>
+	<div class="content2">
+	  <b>Master</b> (<i>Diplôme d'ingénieur</i>) at <a href="https://ensimag.grenoble-inp.fr/en">Ensimag</a>, <a href="https://www.grenoble-inp.fr/en">Grenoble INP</a>. Semester in <a href="https://www.aalto.fi/en">Aalto University</a> (Finland).
+	</div>
+      </li>
+      <li>
+	<div class="date">2011</div>
+	<div class="content2">
+	  <b>DUT</b> in computer sciences in Metz, valedictorian.
+	  Semester in Germany.
+	</div>
+      </li>
+      
+    </ul>
+      
+  
+    <div class="clear">
+    <h2>Professional experience</h2>
+</div>
+    <ul class="par section" id="xp">
+      <li>
+	<div class="date">2021 - now<span class="overlap"><br />(part time)</span></div>
+	<div class="content2">
+	  <span class="jobtitle">Freelance DevOps System Administrator</span> for <span class="employer"><a href="https://www.spi-inc.org/">Software in the Public Interest</a></span>
+          <span class="description">
+            <ul class="ul_xp">
+              <li>Migrate running systems to up-to-date and maintained cloud-based servers or services.</li>
+              <li>Write <a href="https://gitlab.com/cmatte/ansible-pglister/">Ansible script</a> to install open source mailing list software PGLister, work on patches with upstream.</li>
+              <li><a href="https://gitlab.com/spi-inc/members-django">Rewrite</a> a Flask web application in Django (Python).</li>
+            </ul>
+          </span>
+	</div>
+      </li>
+      <li>
+	<div class="date">2022-02 - 09<span class="overlap"><br />(80% part time)</span></div>
+	<div class="content2">
+          <span class="jobtitle">Freelance System Administrator</span> for <span class="employer"><a href="https://www.irislink.com/">IRIS (Canon group)</a></span><br /><span class="description">Manage ~50 Linux servers (upgrade all servers, implement security measures, debug issues and critical crashes, introduce automation with Ansible).</span>
+        </div>
+      </li><li>
+	<div class="date">2019 - 2020</div>
+	<div class="content2">
+	  <span class="jobtitle">Postdoctoral researcher</span> at <span class="employer"><a href="https://www.inria.fr/">Inria</a></span><br />
+          <span class="description">Keywords: Privacy, Web tracking, GDPR, cookie banners.<br />
+          2 publications in peer-reviewed conferences (one top-ranked conference) <a href="https://hal.inria.fr/hal-01282900"></a> <a href="https://hal.inria.fr/hal-01176842"></a> <a href="https://hal.inria.fr/hal-01330479"></a> <a href="https://hal.inria.fr/hal-01330476"></a><span class="noprint"> [<a href="https://www-sop.inria.fr/members/Nataliia.Bielova/cookiebanners/">1</a>, <a href="https://hal.inria.fr/hal-02566891">2</a>]</span> + 1 journal publication <span class="noprint">[<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4206054">1</a>]</span><br />
+          Team work, collaboration with lawyers</span>
+	</div>
+      </li>
+      <li>
+	<div class="date">2018</div>
+	<div class="content2">
+          Off year for <a href="https://cmatte.me/danse/">personal projects</a>
+        </div>
+	<div class="date">2014 - 2017</div>
+	<div class="content2">
+	  <span class="jobtitle">PhD student</span> at <span class="employer"><a href="https://www.universite-lyon.fr/version-anglaise/">Université de Lyon</a> - <a href="https://www.insa-lyon.fr/">INSA Lyon</a> - <a href="https://www.inria.fr/en/privatics">Inria Privatics</a></span><br /><span class="description">Thesis: Wi-Fi Tracking: Fingerprinting Attacks and Countermeasures <a href="https://hal.inria.fr/tel-01659783v1/document"><img src="static/pdf_32.png" class="icon" /></a> <a href="https://cmatte.me/docs/slides_these.pdf"><img src="static/slides.png" class="icon" /></a><br />4 publications in peer-reviewed conferences<a href="https://hal.inria.fr/hal-01282900"></a> <a href="https://hal.inria.fr/hal-01176842"></a> <a href="https://hal.inria.fr/hal-01330479"></a> <a href="https://hal.inria.fr/hal-01330476"></a><span class="noprint"> [<a href="https://hal.inria.fr/hal-01282900">1</a>, <a href="https://hal.inria.fr/hal-01176842">2</a>, <a href="https://hal.inria.fr/hal-01330479">3</a>, <a href="https://hal.inria.fr/hal-01330476">4</a>]</span><br />Teaching (3 years)<br />
+	  Installation of an autonomous self-deployed network of Arch Linux machines (Wi-Fi tracking demonstration) at the <a href="https://www.cite-sciences.fr/fr/ressources/expositions-passees/terra-data/lexposition"><i>Cité des Sciences et de l'Industrie</i></a> (Paris).</span>
+	</div>
+      </li><li>
+	<div class="date">2011-2014</div>
+	<div class="content2">
+	  <span class="jobtitle">Interships / Part-time jobs</span>: <span class="employer"><a href="https://www.hs-mittweida.de/">Hochschule Mittweida</a></span> (Germany), <span class="employer"><a href="https://www.digigram.com/">Digigram</a></span>, <span class="employer"><a href="https://www.tdf.fr/">TDF</a></span>, <span class="employer"><a href="https://www.citi-lab.fr/">CITI Laboratory</a></span>.
+	</div>
+      </li></ul>
+  
+
+      
+  
+        <div>
+      <h2>Technical skills</h2>
+    </div>
+  <ul class="par section">
+    <li>
+      <ul class="par">
+        <li>
+        DevOps tools:
+        Ansible,
+        Bash,
+        Git,
+        Gitlab,
+        Docker,
+        SSH
+        </li>
+        <li>
+          Cloud: Google Cloud Platform, AWS, OVH, Gandi
+        </li>
+	<li>
+          OS:
+        Debian,
+        Arch Linux,
+        Ubuntu,
+        CentOS
+        </li>
+        <li>
+        Software:
+        Apache, NGINX, MariaDB, PostgreSQL, Postfix, Exim, Dovecot, Fail2ban, PHP-FPM, OpenVPN, Nagios, vSphere
+        </li>
+        <li>
+	Programming:
+        Python/Flask,
+        Django,
+        PHP</li>
+        <li>
+          Currently learning: Kubernetes, Terraform
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+
+
+      
+
+      
+      
+      
+      
+  
+    <div id="software">
+  <div class="clear">
+    <h2>Software <a href="https://github.com/Perdu/"><img src="static/GitHub-Mark-32px.png" class="github icon noprint"/></a></h2>
+  </div>
+  <ul class="par section">
+    <li>
+      <ul class="par">
+	<li><a href="https://gitlab.com/cmatte/ansible-pglister/">Ansible-PGLister</a> Ansible script to install all components of the PGLister mailing list system <span class="press">Ansible</span></li>
+
+	<li><a href="https://github.com/Perdu/wombat">Wombat</a> A Wi-Fi tracking system for testing and demonstrational purpose <span class="press">Python</span> <span class="press">Ansible</span> <span class="press">Arch Linux</span></li>
+
+
+	<li><a href="https://github.com/Perdu/vendorlistexplorer">Vendorlist explorer</a> Web application that extracts information from the vendorlist of IAB Europe Transparency & Consent Framework and makes this information human-readable. <span class="press">Python</span> <span class="press">Flask</span> <span class="press">SQLAlchemy</span></li>
+
+
+	<li><a href="https://github.com/Perdu/Cookie-Glasses">Cookie-Glasses</a> A browser extension showing consent registered by cookie banners of IAB Europe's Transparency & Consent Framework <span class="press">JavaScript</span> <span class="press">WebExtensions</span></li>
+
+
+
+
+	<li><a href="https://gitlab.com/spi-inc/members-django">Members-django</a> Rewriting of SPI's membership application using Django <span class="press">Python</span> <span class="press">Django</span></li>
+
+      </ul>
+    </li>
+  </ul>
+</div>
+  
+
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+  
+    <div class="clear" id="misc">
+  <h2>Misc.</h2>
+  <ul class="par">
+    <li>
+      French (native), English (excellent), German (average).<br />
+      Driving license.<br/>
+
+
+      Contribution to Open Source:
+      <ul>
+        <li>Maintainer of <a href="https://aur.archlinux.org/packages?K=Perdu&amp;SeB=m">various AUR packages</a> (Arch Linux), e.g. <a href="https://aur.archlinux.org/packages/wyrd">wyrd</a> <span class="press">Sysadmin</span> <span class="press">CI/CD</span></li>
+
+        <li>Contribution to various projects: <a href="https://gitlab.com/pglister/pglister/-/commits/master?author=cmatte">PGLister</a>, <a href="https://github.com/postgres/pgarchives/commits?author=Perdu">PGArchives</a> and <a href="https://github.com/postgres/pgweb/commits?author=Perdu">PGWeb</a> <span class="press">Django</span>, <a href="https://salsa.debian.org/stefanor/debian-reimbursement/-/commits/main?author=C%C3%A9lestin%20Matte">Debian Reimbursement</a> <span class="press">Ansible</span>, <a href="https://review.opendev.org/q/owner:launchpad%2540cmatte.me">kolla-ansible</a> <span class="press">Ansible</span>, <a href="https://github.com/ansible-collections/community.general/commits?author=Perdu">Ansible community.general</a> <span class="press">Sysadmin</span> <span class="press">Python</span>, <a href="https://github.com/strawberrymusicplayer/strawberry/commits?author=Perdu">Strawberry</a> <span class="press">C++</span>, <a href="https://github.com/cavi-au/Consent-O-Matic/commits?author=Perdu">Consent-O-Matic</a> <span class="press">JavaScript</span>, <a href="https://github.com/ranger/ranger/commits?author=Perdu">ranger</a> <span class="press">Python</span>, <a href="https://github.com/mathieui/poezio/commits?author=Perdu">poezio</a> <span class="press">Python</span>, <a href="https://github.com/git/git/commits?author=Perdu">git (Git-Mediawiki)</a> <span class="press">Perl</span></li>
+
+
+      </ul>
+      Selected personal projects:
+      <ul>
+
+	<li><a href="sysadmin_polecom_en.txt">System administrator</a> for a student association in 2012-14 <span class="press">Sysadmin</span> <span class="press">Debian</span> <span class="press">Apache</span></li>
+
+        <li>Organization committee of <a href="http://grehack.fr/">Grehack</a> 2012, 2013 and 2015 <span class="press">Security</span></li>
+
+        <li>Maintaining 4 personal servers since 2013 <span class="press">Arch Linux</span> <span class="press">Debian</span> <span class="press">Apache</span> <span class="press">Postfix</span> <span class="press">Flask</span> <span class="press">MariaDB</span> <span class="press">OpenVPN</span> <span class="press">Jitsi</span></li>
+
+	<li>2020-21: Launched a fast-paced version of <a href="http://www.sistearth.com">an online game</a> <span class="press">PHP</span> <span class="press">PHP-FPM</span> <span class="press">Monitoring</span> <span class="press">Performance optimization</span></li>
+	<li>Wrote <a href="https://cmatte.me/danse/cellulardance/">dance shows</a> using digital art (Kinect sensors) <span class="press">C</span> <span class="press">C++</span> <span class="press">libfreenect</span> <span class="press">OpenCL</span> <span class="press">SDL</span></li>
+        <li>Wrote <a href="https://connect.ed-diamond.com/auteur/matte-celestin">7 articles</a> in general-public technical journals</li>
+
+
+      </ul>
+    </li>
+  </ul>
+</div>
+  
+
+
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </body>
+</html>

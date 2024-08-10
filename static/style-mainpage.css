@@ -1,0 +1,188 @@
+.ciename {
+    float: left;
+    height: 50px;
+}
+
+.jobtitle {
+    font-style: italic;
+}
+
+.card-header a {
+    color: inherit;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    margin: 5px auto;
+}
+
+.card-header, .card-footer {
+    background-color: #fff;
+}
+
+.hoverline:hover {
+    border-bottom: 3px solid transparent !important;
+}
+
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+
+.card-header :not(.collapsed) .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+    width: 20px;
+}
+
+.card-text {
+    text-align: left !important;
+}
+
+.lang {
+    text-align: left;
+}
+
+.intro_core, .banner h2 {
+    padding: 15px;
+    background-color: #0d6a6a;
+    color: white;
+    margin: 10px auto;
+}
+
+.intro_text_div {
+    display: inline;
+    text-align:left;
+}
+
+.intro_text {
+    font-family: "Calibri", sans-serif;
+    font-size: 17px;
+}
+
+.intro_links {
+    margin: 10px 5px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_links img {
+    margin: 5px;
+}
+
+.pic {
+    width: 140px;
+    margin: 5px 20px 10px 5px;
+    vertical-align: top;
+}
+
+.intro_text ul {
+    margin: 0;
+    list-style: inside;
+}
+
+.skillset {
+    margin-bottom: 0;
+}
+
+.contact {
+    font-size: 20px;
+    text-align: center;
+    border: solid 1px white;
+    color: white;
+    background-color: #0d7a7a;
+    margin: 0 auto;
+    width: 200px;
+    padding: 5px;
+}
+
+.contact:hover, .cv_link_desc:hover {
+    background-color:#0d6a6a;
+}
+
+#cv {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+}
+
+.post_ul {
+    margin-top: 16px;
+}
+
+.cv_link img {
+    height: 80px;
+    padding-top: 5px;
+}
+
+.cv_link img:hover {
+    opacity: 1;
+}
+
+.cv_link div {
+    align-items: center;
+    justify-content: center;
+}
+
+.cv_link_desc {
+    text-align: center;
+    border: 1px solid;
+    background-color: #0d7a7a;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.cv_link_desc img {
+    margin: 0 auto;
+}
+
+.cv_link_desc p {
+    margin-bottom: 1px;
+}
+
+.cv_link span {
+    margin-left: -20px;
+}
+
+.cvresearch img {
+    height: 100px;
+    width: 100px;
+}
+
+.cv_link {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pad {
+    margin-top: 20px;
+}
+
+.wrapper {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    height: 95%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+/* Accessibility (contrast) */
+a {
+    color: #0c009f;
+}
+
+@media only screen and (min-width: 450px) {
+    .intro_pic {
+        float: left;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .pic {
+        margin-right: 5px;
+    }
+}

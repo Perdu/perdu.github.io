@@ -1,0 +1,26 @@
+Gestion des serveurs du Pôle Communication de l'Ensimag : résumé de l'activité
+
+Etat des serveurs lors de la récupération :
+- Une machine sous Debian non mise à jour depuis 6 ans (seules les mises à jour de sécurité étaient effectuées). Les dépôts n'étaient alors même plus maintenus -> mises à jour impossibles.
+- Aucun système de sauvegarde automatique configuré.
+- Les sauvegardes les plus récentes dataient de 4 ans.
+
+Travail effectué :
+- Récupération d'un nouveau serveur (don de la Junior Entreprise de l'Ensimag).
+- Installation complète et configuration de ce nouveau serveur.
+- Communication avec le support informatique et l'administration de l'Ensimag pour le déplacement des serveurs vers la salle des serveurs de l'Ensimag.
+- Déplacement des serveurs vers la salle des serveurs de l'Ensimag.
+- Migration des données utiles du précédent serveur vers le nouveau serveur.
+- Mise en service du nouveau serveur.
+- Communication avec les webmasters des différents sites vis-à-vis de la migration, et autre.
+- Communication avec le support informatique de l'Ensimag pour la migration des noms de domaine vers le nouveau serveur.
+- Test du bon fonctionnement de la migration des données et du changement de serveur pointé par les noms de domaine.
+- Configuration d'un système de backup et d'exportation automatique vers l'ancien serveur, servant désormais de serveur de sauvegarde.
+- Réécriture de le documentation sur les serveurs.
+- Mise en place d'une qualité de service minimale pour pouvoir accéder au serveur en cas de problème (congestion du réseau, utilisation du CPU élevée).
+Toute la migration a été effectuée de manière à ce que les sites internet hébergés par le serveur soient toujours accessibles. Ils n'ont jamais été inaccessibles plus de 24h.
+
+Expérience tirée :
+- Meilleure connaissance en administration de serveurs (apache2, mysql, gestion des sauvegardes, configurations diverses).
+- Expérience en communication avec les webmasters et l'administration technique.
+- Satisfaction de la mise en fonctionnement d'un système bien plus sûr !

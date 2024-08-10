@@ -1,0 +1,22 @@
+body {
+  background-image: url('img/1477818972.webp');
+  background-attachment: local!important;
+}
+
+.col-lg-2 img {
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+
+.col-lg-8 video {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .col-lg-2 img {
+	width: 18%;
+    }
+    .img-thumbnail {
+	padding:0.5px;
+    }
+}

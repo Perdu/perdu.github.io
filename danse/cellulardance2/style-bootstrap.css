@@ -1,0 +1,26 @@
+body {
+  background-image: url('img/1469648133.webp');
+  background-attachment: local!important;
+  background-color: black;
+  color: #ffffff!important;
+}
+
+.col-lg-3 img {
+    width: 80%;
+    margin-bottom: 0.4rem;
+}
+
+.modal-title {
+      color: #000000;
+
+}
+
+@media (max-width: 992px) {
+    .col-lg-3 img {
+	width: 40%;
+	margin-left: 0.5rem;
+    }
+    .img-thumbnail {
+	padding:0.5px;
+    }
+}

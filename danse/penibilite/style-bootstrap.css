@@ -1,0 +1,27 @@
+body {
+  background-image: url('img/1467470708.webp');
+  background-attachment: local!important;
+  background-size: 100% 100%;
+  background-color: #464646;
+  color: #9f9f9f!important;
+}
+
+.col-lg-3 img {
+    width: 35%;
+    margin-bottom: 0.4rem;
+}
+
+@media (max-width: 992px) {
+    .col-lg-3 img {
+	width: 15%;
+    }
+    .img-thumbnail {
+	padding:0.5px;
+    }
+}
+
+@media (max-width: 575px) {
+    .col-lg-3 img {
+        width: 35%;
+    }
+}

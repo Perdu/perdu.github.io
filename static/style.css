@@ -1,0 +1,198 @@
+body {
+    background-color: #F5F5F5;
+//    font-size:12px;
+    color: black;
+    font-family: "Share Tech", sans-serif;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+
+.main {
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.section {
+    margin-top: -2px;
+    margin-bottom: 20px;
+}
+
+#xp {
+    margin-bottom: 30px;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/static/fonts/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rj.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Share Tech';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Share Tech Regular'), local('ShareTech-Regular'), url(/static/fonts/7cHtv4Uyi5K0OeZ7bohU8H0JmA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Calibri'), url(/static/fonts/calibri.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+h1, h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+}
+
+.subtitle, h3 {
+    font-family: "Share Tech", serif;
+}
+
+.subtitle, .lead {
+    font-style: Italic;
+}
+
+.lead {
+    font-size:18px;
+}
+
+h2 {
+   color: #0d6a6a;
+}
+
+.col-sm-4 img, .col-sm-3 img, .col-sm-6 img {
+    margin-bottom: 0.2rem;
+}
+
+.pdf_link {
+    position: absolute;
+    float: right;
+    margin: 3px 3px auto;
+    padding: 2px;
+    top: 0;
+    right: 0;
+}
+
+.img-thumbnail {
+    border: 1px solid #0d6a6a;
+}
+
+.nostyle:hover {
+    text-decoration: none;
+}
+
+.col-sm-4 img {
+    width: 60%;
+}
+
+.col-sm-3 img {
+    width: 80%;
+}
+
+img:hover:not(.nohover) {
+    opacity: 0.5;
+}
+
+.pic {
+    margin: 10px;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.img-thumbnail {
+    border-radius: 0;
+}
+
+.strengths {
+    text-align: right;
+    float: right;
+    color: #808080;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 43px;
+}
+
+.strengths ul {
+    font-style: italic;
+}
+
+.back {
+    background-color: #0d6a6a;
+    text-align: center;
+    //border: solid 1px white;
+    color: white;
+    margin: 3px 3px auto;
+    float: left;
+    width: 100px;
+    padding: 5px;
+    position: absolute;
+}
+
+.back:hover {
+    background-color:#0d7a7a;
+    text-decoration: none;
+}
+
+.cv img {
+    vertical-align: baseline;
+}
+
+.cv {
+    padding-bottom: 20px;
+}
+
+.jobtitle {
+    font-weight: bold;
+}
+
+.employer {
+    font-style: italic;
+}
+
+.employer a, .education a {
+    color: #0a3bff;
+}
+
+.description {
+    color: #808080;
+}
+
+@media only screen and (min-width: 575px) {
+    .vertical {
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
+    }
+    .main_content {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 1265px) {
+    .lead-title {
+        text-align: center;
+    }
+    .img_photo {
+        padding-right: 0px !important;
+    }
+    .strengths {
+        padding-right: 15px;
+    }
+}
