@@ -171,6 +171,12 @@
     box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
 }
 
+
+.legalinformation {
+    margin: 15px 15px 15px 30px;
+    color: #666;
+}
+
 /* Accessibility (contrast) */
 a {
     color: #0c009f;
