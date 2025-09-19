@@ -109,9 +109,11 @@
       }
       h2 {
 	  margin-top:-10px;
-	  //    margin-top:-5px;
 	  margin-bottom:1px;
 	  padding-left:5px;
+      }
+      .cv_subtitle {
+          font-size: 2.5rem;
       }
       .par, .par_left, .par_right {
 	  background-color:white;
@@ -162,6 +164,12 @@
 	  //margin:5px;
 	  margin-left:110px;
       }
+      .job {
+          padding-bottom: 4px;
+      }
+      .clients {
+          margin-left: 25px;
+      }
       .content3 {
 	  padding-left:4px;
       }
@@ -186,7 +194,8 @@
 	  //background:linear-gradient(#88CCFF, white);
       }
       .main_content {
-          width: 50%;
+          width: 90%;
+          max-width: 250mm;
           // width: 210mm; /* Width of A4 page */
           margin: 2em auto;
           //border-radius         : 5px;
@@ -215,11 +224,11 @@
 	  text-align:center;
       }
       .photo {
-	  //float:right;
 	  //margin-top:-5px;
       }
       .img_photo {
 	  // height:200px;
+	  float:left;
           width: 140px;
           padding-right: 15px;
       }
@@ -252,6 +261,19 @@
           color: #808080;
           font-size: 12px;
       }
+      .header_titles_coordinates {
+          display: flex;
+          flex-wrap: wrap;
+//          align-items: center;
+      }
+      .titles {
+          flex: 1 1 auto;
+          margin: 0;
+      }
+      .coordinates {
+          flex: 0 0 auto;
+          text-align: right;
+      }
 
       @media only screen and (max-width: 702px) {
 	  .main_content {
@@ -271,9 +293,21 @@
               display: block;
               margin-left: auto;
               margin-right: auto;
+              float: none;
           }
           #navigation {
               display: none;
+          }
+      }
+      // exact moment title warps
+      @media only screen and (max-width: 876px) {
+          .header_titles_coordinates {
+              display: block;
+              text-align: center;
+
+          }
+          .coordinates {
+              text-align: center;
           }
       }
       @media print {
@@ -286,7 +320,9 @@
           }
 	  .main_content {
               width: 90%;
+              max-width: none;
               border: 0px;
+              padding: 0;
 	  }
 	  body {
 	      background-color:white;
@@ -334,6 +370,9 @@
           .ul_xp {
               padding-left: 5px;
           }
+          .clear {
+              margin-top:50px;
+          }
       }
     </style>
   
@@ -349,38 +388,29 @@
   
 
     <div class="main_content">
-      <div class="head row d-flex flex-wrap">
-        <div class="photo">
-	  <img class="img_photo nohover" srcset="static/photo_124.webp 124w,
-                                                           static/photo_248.webp 248w,
-                                                           static/photo_496.webp 496w" alt="photo" />
-        </div>
+      <div class="head d-flex flex-wrap">
         <div class="infos">
-          
-  
-    <span class="lead-title">
-<h1>Célestin Matte</h1><p><h2>DevOps System Administrator</h2></p></span>
-  
-
-          <div class="row flex-nowrap dualsection">
-            <div class="col-sm-6">
+          <div class="header_titles_coordinates">
+            <div class="titles">
+              
               
   
-    	<a href="mailto:contact@cmatte.me">contact@cmatte.me</a><br/>
-	<a href="https://cmatte.me">https://cmatte.me</a><br/>34 years old<br/>
-        Strasbourg, France
+    <span class="">
+<h1>Célestin Matte</h1><p><h2 class="cv_subtitle">DevOps System Administrator</h2></p></span>
   
 
             </div>
-            <div class="col-sm-6">
-              <div class="strengths">
-  Strengths:<br />
-  <ul>
-    <li>Autonomous</li>
-    <li>International</li>
-    <li>Analytical thinker</li>
-  </ul>
-</div>
+            <div class="coordinates">
+              
+  
+    <div class="">
+	<a href="mailto:contact@cmatte.me">contact@cmatte.me</a><br/>
+	<a href="https://cmatte.me">https://cmatte.me</a><br/>
+        <a href="https://github.com/Perdu">https://github.com/Perdu</a><br />34 years old<br/>
+        Strasbourg, France</div>
+  
+
+              
             </div>
           </div>
           
@@ -421,130 +451,105 @@
 </div>
     <ul class="par section" id="xp">
       <li>
-	<div class="date">2021 - now<span class="overlap"><br />(part time)</span></div>
-	<div class="content2">
-	  <span class="jobtitle">Freelance DevOps System Administrator</span> for <span class="employer"><a href="https://www.spi-inc.org/">Software in the Public Interest</a></span>
-          <span class="description">
-            <ul class="ul_xp">
-              <li>Migrate running systems to up-to-date and maintained cloud-based servers or services.</li>
-              <li>Write <a href="https://gitlab.com/cmatte/ansible-pglister/">Ansible script</a> to install open source mailing list software PGLister, work on patches with upstream.</li>
-              <li><a href="https://gitlab.com/spi-inc/members-django">Rewrite</a> a Flask web application in Django (Python).</li>
-            </ul>
-          </span>
-	</div>
-      </li>
-      <li>
-	<div class="date">2022-02 - 09<span class="overlap"><br />(80% part time)</span></div>
-	<div class="content2">
-          <span class="jobtitle">Freelance System Administrator</span> for <span class="employer"><a href="https://www.irislink.com/">IRIS (Canon group)</a></span><br /><span class="description">Manage ~50 Linux servers (upgrade all servers, implement security measures, debug issues and critical crashes, introduce automation with Ansible).</span>
+        <div class="date">2020 - now<span class="overlap"><br /></span></div>
+        <div class="content2 job">
+          <span class="jobtitle">Freelance DevOps & System Administrator</span>
         </div>
-      </li><li>
-	<div class="date">2019 - 2020</div>
-	<div class="content2">
-	  <span class="jobtitle">Postdoctoral researcher</span> at <span class="employer"><a href="https://www.inria.fr/">Inria</a></span><br />
-          <span class="description">Keywords: Privacy, Web tracking, GDPR, cookie banners.<br />
-          2 publications in peer-reviewed conferences (one top-ranked conference) <a href="https://hal.inria.fr/hal-01282900"></a> <a href="https://hal.inria.fr/hal-01176842"></a> <a href="https://hal.inria.fr/hal-01330479"></a> <a href="https://hal.inria.fr/hal-01330476"></a><span class="noprint"> [<a href="https://www-sop.inria.fr/members/Nataliia.Bielova/cookiebanners/">1</a>, <a href="https://hal.inria.fr/hal-02566891">2</a>]</span> + 1 journal publication <span class="noprint">[<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4206054">1</a>]</span><br />
-          Team work, collaboration with lawyers</span>
-	</div>
-      </li>
-      <li>
-	<div class="date">2018</div>
-	<div class="content2">
-          Off year for <a href="https://cmatte.me/danse/">personal projects</a>
+        <div class="clients job">
+          Worked with multiple clients, including:
         </div>
-	<div class="date">2014 - 2017</div>
-	<div class="content2">
-	  <span class="jobtitle">PhD student</span> at <span class="employer"><a href="https://www.universite-lyon.fr/version-anglaise/">Université de Lyon</a> - <a href="https://www.insa-lyon.fr/">INSA Lyon</a> - <a href="https://www.inria.fr/en/privatics">Inria Privatics</a></span><br /><span class="description">Thesis: Wi-Fi Tracking: Fingerprinting Attacks and Countermeasures <a href="https://hal.inria.fr/tel-01659783v1/document"><img src="static/pdf_32.png" class="icon" /></a> <a href="https://cmatte.me/docs/slides_these.pdf"><img src="static/slides.png" class="icon" /></a><br />4 publications in peer-reviewed conferences<a href="https://hal.inria.fr/hal-01282900"></a> <a href="https://hal.inria.fr/hal-01176842"></a> <a href="https://hal.inria.fr/hal-01330479"></a> <a href="https://hal.inria.fr/hal-01330476"></a><span class="noprint"> [<a href="https://hal.inria.fr/hal-01282900">1</a>, <a href="https://hal.inria.fr/hal-01176842">2</a>, <a href="https://hal.inria.fr/hal-01330479">3</a>, <a href="https://hal.inria.fr/hal-01330476">4</a>]</span><br />Teaching (3 years)<br />
-	  Installation of an autonomous self-deployed network of Arch Linux machines (Wi-Fi tracking demonstration) at the <a href="https://www.cite-sciences.fr/fr/ressources/expositions-passees/terra-data/lexposition"><i>Cité des Sciences et de l'Industrie</i></a> (Paris).</span>
-	</div>
-      </li><li>
-	<div class="date">2011-2014</div>
-	<div class="content2">
-	  <span class="jobtitle">Interships / Part-time jobs</span>: <span class="employer"><a href="https://www.hs-mittweida.de/">Hochschule Mittweida</a></span> (Germany), <span class="employer"><a href="https://www.digigram.com/">Digigram</a></span>, <span class="employer"><a href="https://www.tdf.fr/">TDF</a></span>, <span class="employer"><a href="https://www.citi-lab.fr/">CITI Laboratory</a></span>.
+        <ul>
+          <li><div class="date">2021 - now<span class="overlap"><br />(part time)</span></div><div class="content2 job">
+              <span class="employer">Software in the Public Interest</span>
+              <span class="description">
+                <ul class="ul_xp">
+                  <li>Migrated production systems (websites, mailing lists, email servers) to cloud platforms (GCP, AWS)</li>
+                  <li>Implemented monitoring, backup, and security measures for critical infrastructure</li>
+                  <li>Automated deployments and system configuration with Ansible. Public example: <a href="https://gitlab.com/cmatte/ansible-pglister/">Ansible-PGLister</a></li>
+                  <li><a href="https://gitlab.com/spi-inc/members-django">Reimplemented</a> a Flask web application in Django (Python), improving maintainability</li>
+                  <li>Configured email infrastructure (Exim, SPF, DKIM, DMARC) and Google Workspace integration</li>
+                  <li>Handled support requests for multiple open source projects; worked with projects maintainers on patches integration and bug reports</li>
+                </ul>
+              </span>
+            </div>
+          </li>
+          <li><div class="date">2022-02 - 09<span class="overlap"><br />(80% part time)</span></div><div class="content2 job">
+              <span class="employer">IRIS (Canon group)</span><br />
+              <span class="description">
+                <ul class="ul_xp">
+                  <li>Managed ~50 Linux servers, upgrading systems and implementing security hardening</li>
+                  <li>Resolved critical crashes and issues</li>
+                  <li>Automated recurring tasks using Ansible</li>
+                </ul>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </li><div class="date">2014 - 2020</div>
+          <div class="content2 job">
+            <span class="jobtitle">PhD &amp; Postdoc</span> at <span class="employer">INSA Lyon &amp; Inria</span><br />
+            <span class="description">
+              <ul class="ul_xp">
+                <li>Researched privacy, Wi-Fi & Web tracking, GDPR compliance; published 7 articles (1 top-ranked conference)</li>
+                <li>Built and deployed a demo Wi-Fi tracking system at public venues (Cité des Sciences, CNIL)</li>
+                <li>Automated large-scale analysis of 28,000 websites with custom Python/Selenium script</li>
+                <li>Taught computer science (3 years) and collaborated in interdisciplinary teams, including lawyers</li>
+                <li>Research cited by Google, discussed at IEEE, referenced in legal action and covered by <i>Wired</i> &amp; <i>Le Monde</i></li>
+              </ul>
+            </span>
+          </div><li>
+	<div class="date">2011 - 2014</div>
+	<div class="content2 job">
+	  <span class="jobtitle">Interships / Part-time jobs</span>: <span class="employer">Hochschule Mittweida</span>, <span class="employer">Digigram</span>, <span class="employer">TDF</span>, <span class="employer">CITI Laboratory</span>.
 	</div>
       </li></ul>
   
 
       
   
-        <div>
-      <h2>Technical skills</h2>
-    </div>
+    <div class="clear">
+  <h2>Technical skills</h2>
   <ul class="par section">
     <li>
       <ul class="par">
         <li>
-        DevOps tools:
+        DevOps &amp; CI/CD:
         Ansible,
-        Bash,
+        Docker,
         Git,
         Gitlab,
-        Docker,
-        SSH
+        Bash
         </li>
         <li>
-          Cloud: Google Cloud Platform, AWS, OVH, Gandi
+          Cloud: GCP, AWS, OVH, Gandi
         </li>
 	<li>
-          OS:
-        Debian,
-        Arch Linux,
-        Ubuntu,
-        CentOS
+          OS: Linux (Debian, Arch Linux, Ubuntu, CentOS)
         </li>
         <li>
         Software:
-        Apache, NGINX, MariaDB, PostgreSQL, Postfix, Exim, Dovecot, Fail2ban, PHP-FPM, OpenVPN, Nagios, vSphere
+        Apache, NGINX, PostgreSQL, MariaDB, Postfix, Exim, Dovecot, OpenVPN, Nagios, vSphere
         </li>
         <li>
 	Programming:
-        Python/Flask,
-        Django,
+        Python (Flask, Django),
         PHP</li>
         <li>
-          Currently learning: Kubernetes, Terraform
+          IaC: Familiar with Kubernetes and Terraform (self-study)
         </li>
-      </ul>
-    </li>
-  </ul>
-  
-
-
-      
-
-      
-      
-      
-      
-  
-    <div id="software">
-  <div class="clear">
-    <h2>Software <a href="https://github.com/Perdu/"><img src="static/GitHub-Mark-32px.png" class="github icon noprint"/></a></h2>
-  </div>
-  <ul class="par section">
-    <li>
-      <ul class="par">
-	<li><a href="https://gitlab.com/cmatte/ansible-pglister/">Ansible-PGLister</a> Ansible script to install all components of the PGLister mailing list system <span class="press">Ansible</span></li>
-
-	<li><a href="https://github.com/Perdu/wombat">Wombat</a> A Wi-Fi tracking system for testing and demonstrational purpose <span class="press">Python</span> <span class="press">Ansible</span> <span class="press">Arch Linux</span></li>
-
-
-	<li><a href="https://github.com/Perdu/vendorlistexplorer">Vendorlist explorer</a> Web application that extracts information from the vendorlist of IAB Europe Transparency & Consent Framework and makes this information human-readable. <span class="press">Python</span> <span class="press">Flask</span> <span class="press">SQLAlchemy</span></li>
-
-
-	<li><a href="https://github.com/Perdu/Cookie-Glasses">Cookie-Glasses</a> A browser extension showing consent registered by cookie banners of IAB Europe's Transparency & Consent Framework <span class="press">JavaScript</span> <span class="press">WebExtensions</span></li>
-
-
-
-
-	<li><a href="https://gitlab.com/spi-inc/members-django">Members-django</a> Rewriting of SPI's membership application using Django <span class="press">Python</span> <span class="press">Django</span></li>
-
       </ul>
     </li>
   </ul>
 </div>
   
 
+
+      
+
+      
+      
+      
+      
       
       
       
@@ -568,24 +573,24 @@
 
       Contribution to Open Source:
       <ul>
-        <li>Maintainer of <a href="https://aur.archlinux.org/packages?K=Perdu&amp;SeB=m">various AUR packages</a> (Arch Linux), e.g. <a href="https://aur.archlinux.org/packages/wyrd">wyrd</a> <span class="press">Sysadmin</span> <span class="press">CI/CD</span></li>
+        <li>Maintainer of <a href="https://aur.archlinux.org/packages?K=Perdu&amp;SeB=m">various Arch Linux AUR packages</a>, e.g. <a href="https://aur.archlinux.org/packages/wyrd">wyrd</a></li>
 
-        <li>Contribution to various projects: <a href="https://gitlab.com/pglister/pglister/-/commits/master?author=cmatte">PGLister</a>, <a href="https://github.com/postgres/pgarchives/commits?author=Perdu">PGArchives</a> and <a href="https://github.com/postgres/pgweb/commits?author=Perdu">PGWeb</a> <span class="press">Django</span>, <a href="https://salsa.debian.org/stefanor/debian-reimbursement/-/commits/main?author=C%C3%A9lestin%20Matte">Debian Reimbursement</a> <span class="press">Ansible</span>, <a href="https://review.opendev.org/q/owner:launchpad%2540cmatte.me">kolla-ansible</a> <span class="press">Ansible</span>, <a href="https://github.com/ansible-collections/community.general/commits?author=Perdu">Ansible community.general</a> <span class="press">Sysadmin</span> <span class="press">Python</span>, <a href="https://github.com/strawberrymusicplayer/strawberry/commits?author=Perdu">Strawberry</a> <span class="press">C++</span>, <a href="https://github.com/cavi-au/Consent-O-Matic/commits?author=Perdu">Consent-O-Matic</a> <span class="press">JavaScript</span>, <a href="https://github.com/ranger/ranger/commits?author=Perdu">ranger</a> <span class="press">Python</span>, <a href="https://github.com/mathieui/poezio/commits?author=Perdu">poezio</a> <span class="press">Python</span>, <a href="https://github.com/git/git/commits?author=Perdu">git (Git-Mediawiki)</a> <span class="press">Perl</span></li>
+        <li>Patches and bug reports to open source projects, including Ansible (Python), Strawberry (C++), Consent-O-Matic (JavaScript)</li>
 
 
       </ul>
       Selected personal projects:
       <ul>
 
-	<li><a href="sysadmin_polecom_en.txt">System administrator</a> for a student association in 2012-14 <span class="press">Sysadmin</span> <span class="press">Debian</span> <span class="press">Apache</span></li>
+        <li>Managing 4 personal servers (Arch Linux/Debian), hosting web / mail / VPN / videoconferencing services (2013-now)</li>
 
-        <li>Organization committee of <a href="http://grehack.fr/">Grehack</a> 2012, 2013 and 2015 <span class="press">Security</span></li>
+	<li>Built and operated a real-time version of a game, optimizing and monitoring PHP backend performance (2020-21)</li>
+        <li>Led <a href="https://cmatte.me/danse/cellulardance/">dance shows</a>, developing C/C++ software with Kinect sensors and coordinating performers (2016-2018)</li>
+        <li>Communicated complex technical concepts to general audiences in <a href="https://connect.ed-diamond.com/auteur/matte-celestin">journal articles</a> (2015-2021)</li>
 
-        <li>Maintaining 4 personal servers since 2013 <span class="press">Arch Linux</span> <span class="press">Debian</span> <span class="press">Apache</span> <span class="press">Postfix</span> <span class="press">Flask</span> <span class="press">MariaDB</span> <span class="press">OpenVPN</span> <span class="press">Jitsi</span></li>
+	<li>System administrator for student association, migrated Debian server (2012-14)</li>
 
-	<li>2020-21: Launched a fast-paced version of <a href="http://www.sistearth.com">an online game</a> <span class="press">PHP</span> <span class="press">PHP-FPM</span> <span class="press">Monitoring</span> <span class="press">Performance optimization</span></li>
-	<li>Wrote <a href="https://cmatte.me/danse/cellulardance/">dance shows</a> using digital art (Kinect sensors) <span class="press">C</span> <span class="press">C++</span> <span class="press">libfreenect</span> <span class="press">OpenCL</span> <span class="press">SDL</span></li>
-        <li>Wrote <a href="https://connect.ed-diamond.com/auteur/matte-celestin">7 articles</a> in general-public technical journals</li>
+        <li>Grehack Security Conference - Organization committee (2012 - 2015)</li>
 
 
       </ul>
